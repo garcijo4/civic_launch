@@ -31,11 +31,11 @@
   --line-strong: rgba(17, 46, 43, 0.18);
   --line-soft: rgba(255, 255, 255, 0.18);
 
-  /* Shadows */
-  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.07);
-  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.08);
+  /* B2B Premium Organic Shadows */
+  --shadow-xs: 0 1px 3px rgba(17, 46, 43, 0.04), 0 1px 2px rgba(17, 46, 43, 0.03);
+  --shadow-sm: 0 3px 12px rgba(17, 46, 43, 0.05), 0 1px 4px rgba(17, 46, 43, 0.04);
+  --shadow-md: 0 8px 24px rgba(17, 46, 43, 0.05), 0 2px 8px rgba(17, 46, 43, 0.04);
+  --shadow-lg: 0 15px 44px rgba(17, 46, 43, 0.08), 0 4px 12px rgba(17, 46, 43, 0.03);
 
   /* Radii */
   --radius-xl: 24px;
@@ -318,6 +318,79 @@ button:focus-visible {
 }
 
 /* ============================================================
+   Pilot Announcement Banner
+   ============================================================ */
+.pilot-banner {
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--line);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+}
+
+.pilot-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.pilot-banner-label {
+  font-weight: 800;
+  color: var(--charcoal);
+  font-size: 0.95rem;
+}
+
+.pilot-banner-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pilot-banner-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--green);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.pilot-banner-link:hover {
+  color: var(--green-dark);
+}
+
+.pilot-banner-divider {
+  width: 1px;
+  height: 16px;
+  background: var(--line);
+}
+
+@media (max-width: 768px) {
+  .pilot-banner {
+    padding: 1rem 1.5rem;
+  }
+  .pilot-banner-content {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
+  }
+  .pilot-banner-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .pilot-banner-divider {
+    display: none;
+  }
+}
+
+/* ============================================================
    Buttons
    ============================================================ */
 
@@ -504,15 +577,22 @@ button:focus-visible {
 .trust-badge {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
   margin-top: 1.2rem;
-  font-size: 0.85rem;
-  color: var(--muted);
-  font-weight: 500;
+  font-size: 0.88rem;
+  color: var(--charcoal);
+  font-weight: 600;
   letter-spacing: 0.01em;
+  flex-wrap: wrap;
 }
 
-.trust-badge svg {
+.trust-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.trust-item svg {
   flex-shrink: 0;
 }
 
@@ -609,7 +689,7 @@ button:focus-visible {
 /* Bullet dots */
 .stage-card-foot li::before,
 .info-card li::before,
-.highlight-card li::before,
+.executive-brief-card li::before,
 .panel li::before,
 .partner-card li::before {
   content: "";
@@ -673,7 +753,7 @@ button:focus-visible {
 .panel li,
 .gate-card span,
 .info-card li,
-.highlight-card li,
+.executive-brief-card li,
 .student-card p,
 .college-card p,
 .partner-card li,
@@ -831,7 +911,7 @@ button:focus-visible {
 
 .panel li,
 .info-card li,
-.highlight-card li,
+.executive-brief-card li,
 .partner-card li {
   position: relative;
   padding-left: 1.1rem;
@@ -895,12 +975,80 @@ button:focus-visible {
   box-shadow: var(--shadow-xs);
 }
 
-.highlight-card {
-  padding: 1.8rem;
+.executive-brief-card {
+  padding: 2rem;
   border-radius: var(--radius-lg);
-  background: var(--bg-accent);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-xs);
+  background: var(--bg-alt);
+  border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.brief-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--green-dark);
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 0.75rem;
+}
+
+.brief-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.brief-timeline li {
+  position: relative;
+  padding-left: 1.5rem !important;
+  margin-top: 1.2rem !important;
+}
+
+.brief-timeline li::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--green);
+  z-index: 2;
+}
+
+.brief-timeline li::after {
+  content: "";
+  position: absolute;
+  top: 1.2rem;
+  left: 0.2rem;
+  width: 2px;
+  height: 120%;
+  background: var(--line-strong);
+  z-index: 1;
+}
+
+.brief-timeline li:last-child::after {
+  display: none;
+}
+
+.brief-timeline strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--charcoal);
+  margin-bottom: 0.2rem;
+}
+
+.brief-timeline p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.4;
+  margin: 0;
 }
 
 .partner-card {
@@ -977,20 +1125,27 @@ button:focus-visible {
 }
 
 .student-journey {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.75rem;
-  margin-top: 1.5rem;
+  display: flex;
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
 }
 
 .student-journey div {
-  display: grid;
-  gap: 0.6rem;
-  padding: 1.1rem;
-  border-radius: var(--radius-lg);
-  background: #fff;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-xs);
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  border-right: 1px solid var(--line);
+}
+
+.student-journey div:last-child {
+  border-right: none;
 }
 
 .student-journey p {
@@ -998,6 +1153,19 @@ button:focus-visible {
   color: var(--muted);
   font-size: 0.92rem;
   line-height: 1.6;
+}
+
+/* Pay Badge */
+.pay-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green-light);
+  color: var(--green-dark);
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill);
 }
 
 /* ============================================================
@@ -1532,9 +1700,21 @@ button:focus-visible {
   .difference-grid,
   .gate-grid,
   .student-grid,
-  .student-journey,
   .college-grid {
     grid-template-columns: 1fr;
+  }
+
+  .student-journey {
+    flex-direction: column;
+  }
+
+  .student-journey div {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .student-journey div:last-child {
+    border-bottom: none;
   }
 
   .cta {
