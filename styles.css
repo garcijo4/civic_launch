@@ -492,7 +492,7 @@ button:focus-visible {
    ============================================================ */
 
 .section-heading {
-  max-width: 48rem;
+  max-width: 100%;
 }
 
 .hero-copy h1,
