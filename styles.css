@@ -1155,19 +1155,6 @@ button:focus-visible {
   line-height: 1.6;
 }
 
-/* Pay Badge */
-.pay-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--green-light);
-  color: var(--green-dark);
-  font-weight: 800;
-  font-size: 0.9rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: var(--radius-pill);
-}
-
 /* ============================================================
    Colleges Section
    ============================================================ */
@@ -1431,6 +1418,12 @@ button:focus-visible {
   background: linear-gradient(135deg, var(--green-light), var(--bg-accent));
   color: var(--green-dark);
   transition: transform 280ms ease, background 280ms ease;
+}
+
+.card-icon.auto-width {
+  width: max-content;
+  padding: 0 16px;
+  font-weight: 800;
 }
 
 .card-icon svg {
