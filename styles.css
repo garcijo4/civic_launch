@@ -1602,6 +1602,199 @@ button:focus-visible {
 }
 
 /* ============================================================
+   AI Gap Callout (Problem Section)
+   ============================================================ */
+
+.ai-gap-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  padding: 1.8rem;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--green-light), var(--bg-accent));
+  border: 1px solid var(--green);
+  box-shadow: var(--shadow-sm);
+}
+
+.ai-gap-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 14px;
+  background: var(--green);
+  color: #fff;
+}
+
+.ai-gap-callout h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--charcoal);
+}
+
+.ai-gap-callout p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.98rem;
+}
+
+/* ============================================================
+   Not Yet a Fit Card
+   ============================================================ */
+
+.not-yet-fit-card {
+  background: var(--bg-alt);
+  border-color: var(--line-strong);
+}
+
+.not-yet-fit-card h3 {
+  color: var(--muted);
+}
+
+.not-yet-fit-card li::before {
+  background: var(--muted) !important;
+}
+
+/* ============================================================
+   Student Learns Sub-section
+   ============================================================ */
+
+.student-learns {
+  margin-top: 2rem;
+  padding: 1.8rem;
+  border-radius: var(--radius-lg);
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-xs);
+}
+
+.student-learns h3 {
+  margin: 0 0 1rem;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--charcoal);
+}
+
+.student-learns ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.6rem;
+}
+
+.student-learns li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.student-learns li::before {
+  content: "";
+  position: absolute;
+  top: 0.55rem;
+  left: 0;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+/* ============================================================
+   College Sidebar Layout
+   ============================================================ */
+
+.college-sidebar {
+  display: grid;
+  gap: 1rem;
+}
+
+.college-needs-card {
+  background: var(--bg-alt);
+  border-color: var(--line-strong);
+}
+
+/* ============================================================
+   Help Shape the Pilot Section
+   ============================================================ */
+
+.pilot-shape-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.pilot-shape-card {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-xs);
+  transition: box-shadow 220ms ease, transform 220ms ease;
+}
+
+.pilot-shape-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.pilot-shape-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--green-light), var(--bg-accent));
+  color: var(--green-dark);
+  transition: transform 280ms ease, background 280ms ease;
+}
+
+.pilot-shape-card:hover .pilot-shape-icon {
+  transform: scale(1.08) rotate(-3deg);
+  background: linear-gradient(135deg, var(--green), var(--green-dark));
+  color: #fff;
+}
+
+.pilot-shape-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--charcoal);
+}
+
+.pilot-shape-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.pilot-shape-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* ============================================================
+   Footer Gate Note
+   ============================================================ */
+
+.footer-gate-note {
+  margin-top: 0.35rem;
+  font-size: 0.82rem !important;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ============================================================
    Responsive: Tablet
    ============================================================ */
 
@@ -1658,7 +1851,8 @@ button:focus-visible {
   .platform-strip,
   .difference-grid,
   .gate-grid,
-  .student-grid {
+  .student-grid,
+  .pilot-shape-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1693,8 +1887,13 @@ button:focus-visible {
   .difference-grid,
   .gate-grid,
   .student-grid,
-  .college-grid {
+  .college-grid,
+  .pilot-shape-grid {
     grid-template-columns: 1fr;
+  }
+
+  .ai-gap-callout {
+    flex-direction: column;
   }
 
   .student-journey {
