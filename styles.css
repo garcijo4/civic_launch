@@ -1602,45 +1602,143 @@ button:focus-visible {
 }
 
 /* ============================================================
-   AI Gap Callout (Problem Section)
+   Third Gap Container (Problem Section)
    ============================================================ */
 
-.ai-gap-callout {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.25rem;
-  margin-top: 1.5rem;
-  padding: 1.8rem;
-  border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, var(--green-light), var(--bg-accent));
-  border: 1px solid var(--green);
+.third-gap-container {
+  margin-top: 3rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
   box-shadow: var(--shadow-sm);
 }
 
-.ai-gap-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
-  border-radius: 14px;
-  background: var(--green);
-  color: #fff;
+.third-gap-header {
+  padding: 2.5rem;
+  background: var(--bg-alt);
+  text-align: center;
+  border-bottom: 1px solid var(--line);
 }
 
-.ai-gap-callout h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--charcoal);
-}
-
-.ai-gap-callout p {
+.third-gap-header h3 {
   margin: 0;
+  color: var(--charcoal);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+}
+
+.third-gap-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--line);
+  gap: 1px; /* Creates the border effect */
+}
+
+.gap-column {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-column-header {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.student-header {
+  background: var(--charcoal);
+}
+
+.student-header h4 {
+  margin: 0;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  font-size: 1.1rem;
+}
+
+.nonprofit-header {
+  background: var(--green-dark);
+}
+
+.nonprofit-header h4 {
+  margin: 0;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  font-size: 1.1rem;
+}
+
+.gap-stat-cards {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.gap-stat-card {
+  padding: 2.5rem;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gap-stat-card + .gap-stat-card {
+  border-top: 1px solid var(--line);
+}
+
+.gap-stat-number {
+  display: block;
+  font-size: clamp(3.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  color: var(--charcoal);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.nonprofit-header + .gap-stat-cards .gap-stat-number,
+.gap-column:nth-child(2) .gap-stat-number {
+  color: var(--green-dark);
+}
+
+.gap-stat-card p {
   color: var(--text-secondary);
-  line-height: 1.7;
-  font-size: 0.98rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 32ch;
+  margin: 0 auto;
+}
+
+.third-gap-summary {
+  padding: 3rem 2rem;
+  background: var(--charcoal);
+  color: #fff;
+  text-align: center;
+}
+
+.third-gap-summary p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+.third-gap-sources {
+  padding: 1.25rem 2rem;
+  background: #fff;
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+
+.third-gap-sources p {
+  margin: 0;
+  color: #8c96a0; /* A slightly lighter muted color to keep it truly minimal */
+  font-size: 0.75rem;
+  line-height: 1.5;
 }
 
 /* ============================================================
@@ -1892,8 +1990,8 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .ai-gap-callout {
-    flex-direction: column;
+  .third-gap-grid {
+    grid-template-columns: 1fr;
   }
 
   .student-journey {
