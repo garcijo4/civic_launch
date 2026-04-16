@@ -61,6 +61,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
@@ -833,6 +834,13 @@ button:focus-visible {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.engine-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
   margin-top: 2.5rem;
 }
 
@@ -1948,6 +1956,7 @@ button:focus-visible {
 
   .platform-strip,
   .difference-grid,
+  .engine-grid,
   .gate-grid,
   .student-grid,
   .pilot-shape-grid {
@@ -1983,6 +1992,7 @@ button:focus-visible {
   .problem-grid,
   .platform-strip,
   .difference-grid,
+  .engine-grid,
   .gate-grid,
   .student-grid,
   .college-grid,
