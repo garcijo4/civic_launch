@@ -91,3 +91,30 @@ if ("IntersectionObserver" in window) {
 } else {
   revealTargets.forEach((target) => target.classList.add("is-visible"));
 }
+
+/* ============================================================
+   Video Play Overlay
+   ============================================================ */
+const pitchVideo = document.getElementById("pitch-video");
+const playBtn = document.getElementById("video-play-btn");
+
+if (pitchVideo && playBtn) {
+  playBtn.addEventListener("click", () => {
+    playBtn.classList.add("is-hidden");
+    pitchVideo.play();
+  });
+
+  pitchVideo.addEventListener("pause", () => {
+    if (!pitchVideo.ended) {
+      playBtn.classList.remove("is-hidden");
+    }
+  });
+
+  pitchVideo.addEventListener("ended", () => {
+    playBtn.classList.remove("is-hidden");
+  });
+
+  pitchVideo.addEventListener("play", () => {
+    playBtn.classList.add("is-hidden");
+  });
+}

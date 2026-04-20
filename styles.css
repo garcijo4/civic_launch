@@ -1750,6 +1750,200 @@ button:focus-visible {
 }
 
 /* ============================================================
+   Video Showcase (Elevator Pitch)
+   ============================================================ */
+
+.video-showcase {
+  margin-top: 3rem;
+  padding: 3rem;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(145deg, var(--charcoal), var(--charcoal-light));
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle decorative glow */
+.video-showcase::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(76, 175, 130, 0.12), transparent 70%);
+  pointer-events: none;
+}
+
+.video-showcase::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(156, 196, 178, 0.08), transparent 70%);
+  pointer-events: none;
+}
+
+.video-showcase-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.video-showcase-header .eyebrow {
+  color: var(--green-soft);
+}
+
+.video-showcase-header h3 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.video-showcase-subtitle {
+  margin-top: 0.75rem;
+  color: rgba(255, 255, 255, 0.65) !important;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.video-player-container {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-player-wrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+
+.pitch-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #000;
+}
+
+/* Play overlay button */
+.video-play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: rgba(17, 46, 43, 0.45);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 300ms ease;
+}
+
+.video-play-overlay:hover {
+  background: rgba(17, 46, 43, 0.3);
+}
+
+.video-play-overlay.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 400ms ease;
+}
+
+.play-icon-ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow:
+    0 0 0 8px rgba(76, 175, 130, 0.2),
+    0 0 0 16px rgba(76, 175, 130, 0.08),
+    0 8px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+  animation: pulse-ring 2.5s ease-in-out infinite;
+}
+
+.video-play-overlay:hover .play-icon-ring {
+  transform: scale(1.08);
+  box-shadow:
+    0 0 0 10px rgba(76, 175, 130, 0.25),
+    0 0 0 20px rgba(76, 175, 130, 0.1),
+    0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.play-icon-ring svg {
+  margin-left: 3px; /* Optical center for play triangle */
+}
+
+@keyframes pulse-ring {
+  0%, 100% {
+    box-shadow:
+      0 0 0 8px rgba(76, 175, 130, 0.2),
+      0 0 0 16px rgba(76, 175, 130, 0.08),
+      0 8px 30px rgba(0, 0, 0, 0.25);
+  }
+  50% {
+    box-shadow:
+      0 0 0 12px rgba(76, 175, 130, 0.15),
+      0 0 0 24px rgba(76, 175, 130, 0.05),
+      0 8px 30px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.play-label {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.play-duration {
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+/* Responsive video */
+@media (max-width: 860px) {
+  .video-showcase {
+    padding: 2rem 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .play-icon-ring {
+    width: 56px;
+    height: 56px;
+  }
+
+  .play-icon-ring svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* ============================================================
    Not Yet a Fit Card
    ============================================================ */
 
