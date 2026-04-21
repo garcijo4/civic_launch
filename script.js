@@ -7,6 +7,10 @@ const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
 
+/* ============================================================
+   Mobile Nav Toggle
+   ============================================================ */
+
 if (toggleButton && header) {
   toggleButton.addEventListener("click", () => {
     const isOpen = header.classList.toggle("menu-open");
@@ -20,6 +24,10 @@ if (toggleButton && header) {
     });
   });
 }
+
+/* ============================================================
+   FAQ Accordion
+   ============================================================ */
 
 faqButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -42,6 +50,10 @@ faqButtons.forEach((button) => {
     }
   });
 });
+
+/* ============================================================
+   Scroll Reveal (IntersectionObserver)
+   ============================================================ */
 
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
@@ -93,15 +105,17 @@ if ("IntersectionObserver" in window) {
 }
 
 /* ============================================================
-   Video Play Overlay
+   Video Play Overlay + Tracking
    ============================================================ */
-const pitchVideo = document.getElementById("pitch-video");
+const pitchVideo = document.getElementById("pitch-video-player");
 const playBtn = document.getElementById("video-play-btn");
 
 if (pitchVideo && playBtn) {
   playBtn.addEventListener("click", () => {
     playBtn.classList.add("is-hidden");
     pitchVideo.play();
+    // Track video play event
+    console.log("[Civic Launch] Video play event triggered");
   });
 
   pitchVideo.addEventListener("pause", () => {

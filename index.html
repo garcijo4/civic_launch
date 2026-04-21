@@ -3,22 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Civic Launch | Paid Micro-Internships, Nonprofit Capacity, AI Workflows, and Reusable Learning</title>
+  <title>Civic Launch · Paid Student Talent for Nonprofits · Ventura County Pilot</title>
   <meta
     name="description"
-    content="Civic Launch connects college students with paid project-based work at nonprofit organizations. We provide W-2 employment, managed scoping, structured AI workflows, and reusable best-practice playbooks."
+    content="Civic Launch is a managed nonprofit talent intermediary connecting college students with paid, project-based micro-internships at nonprofit organizations. W-2 compliant. Reusable AI workflows. Ventura County pilot."
   >
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Civic Launch — Paid Student Talent for Nonprofits">
+  <meta property="og:description" content="Real projects. Reusable AI workflows. A Ventura County pilot connecting students and nonprofits through scoped, managed, W-2 compliant project work.">
+  <meta property="og:image" content="./assets/civic-launch-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Civic Launch — Paid Student Talent for Nonprofits">
+  <meta name="twitter:description" content="Real projects. Reusable AI workflows. A Ventura County pilot connecting students and nonprofits through scoped, managed, W-2 compliant project work.">
+  <meta name="twitter:image" content="./assets/civic-launch-og.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+
+  <!-- FAQ Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Civic Launch a job board?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Civic Launch is a managed nonprofit talent intermediary. The team scopes projects, recruits students, curates matches, handles onboarding, and supports quality throughout. It is not a self-serve job board or volunteer matching platform."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much nonprofit supervision time is required?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "About 2–3 hours total across three touchpoints: a 15-minute scoping call, a 10-minute kickoff, and a 30-minute final review. Civic Launch handles everything in between."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do hosts have to use AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. AI is optional. During scoping, hosts choose whether AI-assisted work is allowed, restricted, or fully opt-out. Every decision is documented before the project begins."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What exactly does a nonprofit receive at the end of a project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A finished deliverable, a workflow handoff note documenting what was done and what worked, and reusable templates or process documentation where applicable."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is this different from volunteering, consulting, or internship matching?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Students are paid W-2 workers, not volunteers or contractors. Civic Launch manages scoping, matching, onboarding, quality support, and payroll. Work is scoped, bounded, and documented with reusable handoffs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are students paid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Through W-2 employment via an employer-of-record model. The target pay range is $18–$22 per hour. Students are employees, not independent contractors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kinds of projects are a fit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Grant prospect research, communications and social media, donor database cleanup, volunteer onboarding design, basic data analysis, website updates, and other bounded deliverables. Most projects are 15–25 hours. Some analytics or dashboard projects are 25–40 hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Civic Launch already launched?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The Ventura County pilot is in development. Launch is contingent on legal, funding, and partnership readiness gates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Civic Launch funded?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Civic Launch is seeking an initial anchor grant within a broader Year 1 funding stack. Philanthropic support helps launch the model. Over time, support shifts toward Federal Work-Study and host co-pay."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
   <div class="site-shell">
     <header class="site-header">
       <div class="utility-bar">
-        <p>Ventura County pilot in development for nonprofit hosts, students, college partners, and early funders.</p>
+        <p>Ventura County pilot in development — seeking nonprofit hosts, students, college partners, and early funders.</p>
         <a href="mailto:jgarcia@callutheran.edu?subject=Civic%20Launch%20Pilot%20Inquiry">Contact Civic Launch</a>
       </div>
 
@@ -27,7 +124,7 @@
           <img src="./assets/civic-launch-icon.png" alt="Civic Launch logo" class="brand-mark">
           <span class="brand-lockup">
             <strong>Civic Launch</strong>
-            <span>Paid Micro-Internships. Nonprofit Capacity.<br>Student Careers.</span>
+            <span>Managed Nonprofit Talent Intermediary</span>
           </span>
         </a>
 
@@ -40,555 +137,579 @@
 
         <div class="nav-shell" id="site-nav">
           <nav class="site-nav" aria-label="Primary">
-            <a href="#nonprofits">Nonprofits</a>
-            <a href="#students">Students</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#projects">Projects</a>
+            <a href="#team">Team</a>
             <a href="#colleges">Colleges</a>
-            <a href="#about">About Us</a>
-            <a href="#faqs">FAQs</a>
+            <a href="#faqs">FAQ</a>
+            <a href="#contact">Contact</a>
           </nav>
 
           <div class="nav-actions">
-            <a class="button button-ghost" href="#difference">Why Civic Launch</a>
+            <a class="button" href="https://forms.cloud.microsoft/r/WkhSGKYU7G" target="_blank" rel="noopener">Submit a Project Need</a>
           </div>
         </div>
       </div>
     </header>
 
-    <div class="pilot-banner">
-      <div class="pilot-banner-content">
-        <span class="pilot-banner-label">Ready to Join the Pilot?</span>
-        <div class="pilot-banner-links">
-          <a href="https://forms.cloud.microsoft/r/WkhSGKYU7G" target="_blank" rel="noopener" class="pilot-banner-link">
-            For Nonprofits <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <span class="pilot-banner-divider"></span>
-          <a href="https://forms.cloud.microsoft/r/b0c2xCPjq0" target="_blank" rel="noopener" class="pilot-banner-link">
-            For Students <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
     <main id="main-content">
-      <section class="hero section" id="top">
-        <div class="hero-copy" data-reveal>
-          <p class="eyebrow">Managed Nonprofit Talent Intermediary + AI Workforce Readiness + Reusable Workflows</p>
-          <h1>Build nonprofit capacity, open paid career pathways, and expand practical AI readiness.</h1>
-          <p class="hero-text">
-            Civic Launch connects college students and recent graduates with short-term, paid, project-based work at
-            nonprofit organizations. We scope the project, curate the match, handle W-2 payroll and compliance, support
-            quality from kickoff through final handoff, and pair every placement with structured AI literacy training,
-            human-supervised workflow support, and a cross-project learning system that makes each cohort stronger than the last.
+
+      <!-- ============================================================
+           Section 1: Hero
+           ============================================================ -->
+      <section class="hero-centered section" id="top">
+        <div class="hero-inner" data-reveal>
+          <p class="eyebrow">Ventura County Pilot</p>
+          <h1>Paid student talent<br>for nonprofits.</h1>
+          <p class="hero-subhead">Real projects. Reusable AI workflows.</p>
+          <p class="hero-support">
+            Civic Launch is a managed nonprofit talent intermediary that turns underused student talent
+            into nonprofit capacity through scoped, W-2 compliant student projects and reusable workflow handoff.
           </p>
 
           <div class="hero-actions">
-            <a class="button" href="https://forms.cloud.microsoft/r/WkhSGKYU7G" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-              Submit a Project Need <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+            <a class="button" href="https://forms.cloud.microsoft/r/WkhSGKYU7G" target="_blank" rel="noopener" id="cta-hero-nonprofit">
+              Submit a Project Need <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
             </a>
-            <a class="button button-secondary" href="https://forms.cloud.microsoft/r/b0c2xCPjq0" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-              Apply as a Student <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+            <a class="button button-secondary" href="https://forms.cloud.microsoft/r/b0c2xCPjq0" target="_blank" rel="noopener" id="cta-hero-student">
+              Register Student Interest <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
             </a>
-            <a class="button button-ghost" href="#elevator-pitch" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              Watch the Pitch
+            <a class="button button-ghost" href="mailto:jgarcia@callutheran.edu?subject=Civic%20Launch%20Partnership%20Inquiry" id="cta-hero-funder">
+              Discuss Funding or Partnership
             </a>
           </div>
+          <div class="hero-actions-secondary">
+            <a class="button button-ghost" href="#pitch-video" id="cta-hero-video">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Watch the 90-Second Pitch
+            </a>
+          </div>
+
           <div class="trust-badge">
-            <span class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> W-2 Compliant</span>
-            <span class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> $18-$22/hr Wages</span>
-            <span class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero HR Burden</span>
-            <span class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> AI Workflows + Learning System</span>
-          </div>
-
-          <div class="hero-jump-links" aria-label="Quick section links">
-            <a href="#nonprofits">Nonprofit support</a>
-            <a href="#students">Student opportunities</a>
-            <a href="#colleges">College partnerships</a>
-            <a href="#faqs">Common questions</a>
+            <span class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> W-2 Compliant</span>
+            <span class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Paid W-2 Work</span>
+            <span class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero HR Burden</span>
+            <span class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Supervised AI Workflows</span>
           </div>
         </div>
+      </section>
 
-        <div class="hero-stage" data-reveal>
-          <div class="stage-backdrop" aria-hidden="true"></div>
-
-          <article class="stage-card stage-card-main">
-            <p class="card-kicker">Pilot Snapshot</p>
-            <h2>One local model solving two persistent gaps at once.</h2>
-            <div class="stage-metrics">
-              <div>
-                <strong>25-50</strong>
-                <span>micro-internships planned</span>
-              </div>
-              <div>
-                <strong>10-15</strong>
-                <span>nonprofit host partners</span>
-              </div>
-              <div>
-                <strong>15-25</strong>
-                <span>hours per project</span>
-              </div>
-              <div>
-                <strong>2-3</strong>
-                <span>target host supervision hours</span>
-              </div>
+      <!-- ============================================================
+           Section 2: Choose Your Path (audience wayfinding)
+           ============================================================ -->
+      <section class="path-strip section-tight" id="paths" aria-label="Choose your path">
+        <div class="path-grid">
+          <a class="path-card" href="#how-it-works" data-reveal>
+            <div class="path-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
             </div>
-          </article>
-
-          <article class="stage-card stage-card-note note-left">
-            <p class="card-kicker">For Nonprofits</p>
-            <p>Capacity-building deliverables without running your own internship program.</p>
-          </article>
-
-          <article class="stage-card stage-card-note note-right">
-            <p class="card-kicker">For Students</p>
-            <p>Paid experience, professional readiness, and responsible AI-enabled productivity support.</p>
-          </article>
-
-          <article class="stage-card stage-card-foot">
-            <p class="card-kicker">What makes it different</p>
-            <ul>
-              <li>Managed scoping and matching</li>
-              <li>W-2 employer-of-record compliance</li>
-              <li>Nonprofits-first pilot design</li>
-              <li>AI skills + structured workflows + cross-project learning</li>
-            </ul>
-          </article>
+            <h3>For Nonprofits</h3>
+            <p>Get capacity without adding staff. Scoped projects, zero HR burden, reusable handoffs.</p>
+            <span class="path-link">See how it works <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+          <a class="path-card" href="#value" data-reveal>
+            <div class="path-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+            </div>
+            <h3>For Students</h3>
+            <p>Get paid for real project work. W-2 wages, professional skills, AI workflow fluency.</p>
+            <span class="path-link">See what you gain <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+          <a class="path-card" href="#colleges" data-reveal>
+            <div class="path-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            </div>
+            <h3>For Colleges</h3>
+            <p>Extend experiential learning. Career services partnership, FWS pathways, learning lab.</p>
+            <span class="path-link">See campus benefits <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
         </div>
       </section>
 
-      <section class="platform-strip section-tight" aria-label="Launch platform">
-        <div class="platform-item" data-reveal>
-          <span class="platform-number">650+</span>
-          <span class="platform-label">organizations in the CLU Center for Nonprofit Leadership network</span>
-        </div>
-        <div class="platform-item" data-reveal>
-          <span class="platform-number">41,000+</span>
-          <span class="platform-label">college students across Ventura County</span>
-        </div>
-        <div class="platform-item" data-reveal>
-          <span class="platform-number">6,790</span>
-          <span class="platform-label">registered nonprofits in Ventura County</span>
-        </div>
-        <div class="platform-item" data-reveal>
-          <span class="platform-number">3</span>
-          <span class="platform-label">college partnership pathways in the initial pilot design</span>
-        </div>
-      </section>
-
-      <section class="problem section section-alt">
+      <!-- ============================================================
+           Section 3: Two Shortages. One Local System Gap.
+           ============================================================ -->
+      <section class="section section-alt" id="gap">
         <div class="section-heading" data-reveal>
-          <p class="eyebrow">Why now</p>
-          <h2>Civic Launch sits at the point where two urgent needs already overlap.</h2>
-          <p>
-            The strongest ideas in the business plan are not abstract. Students need paid experience that fits real
-            lives, and nonprofits need help with bounded work they often cannot staff internally.
-          </p>
+          <p class="eyebrow">Why This Matters</p>
+          <h2>Two shortages. One local system gap.</h2>
         </div>
 
-        <div class="problem-grid">
-          <article class="problem-card" data-reveal>
-            <p class="card-kicker">Students</p>
-            <strong>41%</strong>
-            <h3>Too much early-career experience is still unpaid.</h3>
-            <p>
-              Civic Launch is designed for students who need flexible, career-relevant work without committing to a
-              traditional semester-long internship schedule.
-            </p>
-          </article>
-
-          <article class="problem-card" data-reveal>
-            <p class="card-kicker">Nonprofits</p>
-            <strong>75%</strong>
-            <h3>Persistent vacancies leave critical capacity gaps open.</h3>
-            <p>
-              Many nonprofits need help with communications, research, data, and operations work but cannot absorb the
-              burden of hiring, payroll, and compliance on their own.
-            </p>
-          </article>
-
-          <article class="problem-card accent-card" data-reveal>
-            <p class="card-kicker">The Civic Launch response</p>
-            <h3>Paid micro-internships, managed support, and modern workforce readiness.</h3>
-            <p>
-              Every project is bounded, every student is paid as a W-2 worker, and the Civic Launch team absorbs the
-              operational friction that normally prevents a match from happening.
-            </p>
-          </article>
-        </div>
-
-        <div class="third-gap-container" data-reveal>
-          <div class="third-gap-header">
-            <h3>A Third Gap: AI Access and Readiness</h3>
-          </div>
-          
-          <div class="third-gap-grid">
-            <div class="gap-column">
-              <div class="gap-column-header student-header">
-                <h4>STUDENTS</h4>
-              </div>
-              <div class="gap-stat-cards">
-                <article class="gap-stat-card">
-                  <span class="gap-stat-number">55%</span>
-                  <p>of recent grads say their program didn't prepare them to use AI tools</p>
-                </article>
-                <article class="gap-stat-card">
-                  <span class="gap-stat-number">58%</span>
-                  <p>feel they lack sufficient AI knowledge and skills for the workforce</p>
-                </article>
-              </div>
+        <div class="story-cards">
+          <article class="story-card" data-reveal>
+            <div class="story-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
             </div>
-            
-            <div class="gap-column">
-              <div class="gap-column-header nonprofit-header">
-                <h4>NONPROFITS</h4>
-              </div>
-              <div class="gap-stat-cards">
-                <article class="gap-stat-card">
-                  <span class="gap-stat-number">76%</span>
-                  <p>of nonprofits have no formal AI strategy; small orgs adopt at half the rate of large ones</p>
-                </article>
-                <article class="gap-stat-card">
-                  <span class="gap-stat-number">&lt;3%</span>
-                  <p>of nonprofit budgets allocated to technology or AI adoption</p>
-                </article>
-              </div>
-            </div>
-          </div>
+            <h3>Students need paid experience.</h3>
+            <p>
+              A first-generation college student working two part-time jobs. Cannot afford an unpaid internship.
+              Has the skills but not the access. Needs flexible, paid, career-relevant work that fits a real life.
+            </p>
+          </article>
 
-          <div class="third-gap-summary">
-            <p>Beyond simple technology underinvestment, both sides face an implementation gap. Students may have experimented with AI casually, but few have learned how to use it professionally &mdash; with verification, documentation, and deliverable accountability. Nonprofits may be interested in AI, but lack the time, safeguards, and task-specific frameworks to use it effectively. The result is fragmented experimentation rather than repeatable value creation. Civic Launch closes that gap by pairing supervised project work with reusable workflows and structured documentation of what works, for whom, and under what constraints.</p>
-          </div>
-          
-          <div class="third-gap-sources">
-            <p>Sources: Cengage Group 2024 Graduate Survey (55% unprepared for AI); Digital Education Council Global AI Student Survey 2024 (58% lack AI skills); TechSoup State of AI in Nonprofits 2025 (76% no formal AI strategy; 2x adoption gap); NTEN 2024 Digital Investments Report (&lt;3% tech budgets)</p>
-          </div>
+          <article class="story-card" data-reveal>
+            <div class="story-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/></svg>
+            </div>
+            <h3>Nonprofits need affordable capacity.</h3>
+            <p>
+              An executive director with a grant report, a website update, and a donor database cleanup on the to-do list.
+              No budget for another hire. No bandwidth to manage an intern program. The work stays undone.
+            </p>
+          </article>
         </div>
+
+        <p class="story-synthesis" data-reveal>
+          Civic Launch exists in the gap between these two unmet needs.
+        </p>
       </section>
 
-      <section class="difference section" id="difference">
+      <!-- ============================================================
+           Section 4: Why Ventura County
+           ============================================================ -->
+      <section class="section" id="beachhead">
         <div class="section-heading" data-reveal>
-          <p class="eyebrow">Why Civic Launch</p>
-          <h2>Project-based. Purpose-driven. Designed for the realities of California's nonprofit sector.</h2>
-          <p>
-            The model creates value at three levels: stronger student AI-readiness, stronger nonprofit capacity through
-            structured deliverables and workflow handoff, and an accumulating knowledge base of project playbooks and best
-            practices that improves quality and consistency with every cohort.
-          </p>
+          <p class="eyebrow">Beachhead Market</p>
+          <h2>Why Ventura County is the right place to launch.</h2>
         </div>
 
-        <div class="difference-grid">
-          <article class="difference-card" data-reveal>
-            <div class="card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
+        <div class="beachhead-tiers" data-reveal>
+          <article class="beachhead-tier tier-primary">
+            <div class="tier-badge">Now</div>
+            <h3>Ventura County</h3>
+            <p>Nonprofits through the CLU Center for Nonprofit Leadership network</p>
+            <div class="tier-stats">
+              <div>
+                <strong>650+</strong>
+                <span>organizations in the CLU/CNL network</span>
+              </div>
+              <div>
+                <strong>6,790</strong>
+                <span>registered nonprofits in Ventura County</span>
+              </div>
+              <div>
+                <strong>41,000+</strong>
+                <span>college students across Ventura County</span>
+              </div>
             </div>
-            <h3>Nonprofits first</h3>
-            <p>The pilot serves nonprofit organizations only, keeping the first version focused and mission aligned.</p>
+            <p class="tier-source">Sources: CLU Center for Nonprofit Leadership; California Secretary of State nonprofit registry; NCES enrollment data</p>
           </article>
-          <article class="difference-card" data-reveal>
-            <div class="card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-            </div>
-            <h3>Managed, not self-serve</h3>
-            <p>Project scoping, candidate review, onboarding, and quality support are handled through the intermediary.</p>
+
+          <article class="beachhead-tier tier-secondary" data-reveal>
+            <div class="tier-badge">Near-term</div>
+            <h3>Tri-County / Greater LA</h3>
+            <p>Expand through adjacent HSI networks and regional nonprofit associations once the Ventura County pilot proves the model.</p>
           </article>
-          <article class="difference-card" data-reveal>
-            <div class="card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 3h-8l-2 4h12z"/><path d="m9 14 2 2 4-4"/></svg>
-            </div>
-            <h3>W-2 compliant</h3>
-            <p>Students are paid workers, not volunteers and not independent contractors.</p>
-          </article>
-          <article class="difference-card" data-reveal>
-            <div class="card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.912 5.813a2 2 0 0 0 1.272 1.278L21 12l-5.816 1.91a2 2 0 0 0-1.275 1.278L12 21l-1.91-5.812a2 2 0 0 0-1.277-1.278L3 12l5.813-1.91a2 2 0 0 0 1.278-1.277z"/></svg>
-            </div>
-            <h3>AI workflow + learning system</h3>
-            <p>Students learn responsible AI use through structured project work. Projects use human-supervised workflows for research, drafting, QA, and handoff. Civic Launch captures what works across projects into reusable playbooks &mdash; so every cohort makes the model stronger.</p>
+
+          <article class="beachhead-tier tier-tertiary" data-reveal>
+            <div class="tier-badge">Long-term</div>
+            <h3>California HSI + Nonprofit Ecosystem</h3>
+            <p>Scale statewide through California's 175+ Hispanic-Serving Institutions and nonprofit infrastructure — only after each expansion tier is validated.</p>
           </article>
         </div>
       </section>
 
-      <section class="process section" style="background-color: var(--bg-alt);">
+      <!-- ============================================================
+           Section 5: What One Project Looks Like
+           ============================================================ -->
+      <section class="section section-alt" id="projects">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Real Examples</p>
+          <h2>What one Civic Launch project looks like.</h2>
+        </div>
+
+        <div class="project-cards">
+          <article class="project-card" data-reveal>
+            <div class="project-header">
+              <span class="project-type">Research</span>
+              <h3>Grant Prospect Research</h3>
+            </div>
+            <dl class="project-details">
+              <div>
+                <dt>Hours</dt>
+                <dd>15–20</dd>
+              </div>
+              <div>
+                <dt>Primary skill</dt>
+                <dd>Research + writing</dd>
+              </div>
+              <div>
+                <dt>Deliverable</dt>
+                <dd>10 ranked prospects with fit notes</dd>
+              </div>
+              <div class="project-handoff">
+                <dt>Reusable handoff</dt>
+                <dd>Grant research workflow template</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-header">
+              <span class="project-type">Process Design</span>
+              <h3>Volunteer Onboarding</h3>
+            </div>
+            <dl class="project-details">
+              <div>
+                <dt>Hours</dt>
+                <dd>15–25</dd>
+              </div>
+              <div>
+                <dt>Primary skill</dt>
+                <dd>Process design + communication</dd>
+              </div>
+              <div>
+                <dt>Deliverable</dt>
+                <dd>Onboarding guide + email sequence</dd>
+              </div>
+              <div class="project-handoff">
+                <dt>Reusable handoff</dt>
+                <dd>Volunteer intake process doc</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-header">
+              <span class="project-type">Data + Analytics</span>
+              <h3>Program Dashboard</h3>
+            </div>
+            <dl class="project-details">
+              <div>
+                <dt>Hours</dt>
+                <dd>25–40</dd>
+              </div>
+              <div>
+                <dt>Primary skill</dt>
+                <dd>Data analysis + visualization</dd>
+              </div>
+              <div>
+                <dt>Deliverable</dt>
+                <dd>Interactive dashboard + data summary</dd>
+              </div>
+              <div class="project-handoff">
+                <dt>Reusable handoff</dt>
+                <dd>Dashboard update playbook</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           Section 6: Elevator Pitch Video
+           ============================================================ -->
+      <section class="section" id="pitch-video">
+        <div class="video-showcase" data-reveal>
+          <div class="video-showcase-header">
+            <p class="eyebrow">The Pitch</p>
+            <h2>90 seconds on why Civic Launch matters.</h2>
+          </div>
+          <div class="video-player-container">
+            <div class="video-player-wrapper">
+              <video
+                id="pitch-video-player"
+                class="pitch-video"
+                controls
+                preload="none"
+                playsinline
+                loading="lazy"
+              >
+                <source src="./assets/Civic_Launch_Pitch_with_captions.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <button class="video-play-overlay" id="video-play-btn" aria-label="Play elevator pitch video">
+                <div class="play-icon-ring">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" stroke="none" aria-hidden="true">
+                    <polygon points="6 3 20 12 6 21 6 3"/>
+                  </svg>
+                </div>
+                <span class="play-label">Play Video<span class="play-duration"> · 1:40</span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           Section 7: How the Managed Model Works
+           ============================================================ -->
+      <section class="section section-alt" id="how-it-works">
         <div class="section-heading" data-reveal>
           <p class="eyebrow">How It Works</p>
-          <h2>A high-touch model that keeps projects bounded and participation realistic.</h2>
+          <h2>A managed model where everyone knows their role.</h2>
         </div>
 
-        <div class="process-layout">
-          <div class="timeline" data-reveal>
-            <article class="timeline-step">
-              <span>01</span>
-              <div>
-                <h3>Scope the project</h3>
-                <p>Translate a nonprofit need into a clear, achievable brief with deliverables, hours, supervision expectations, and success criteria.</p>
-              </div>
-            </article>
-            <article class="timeline-step">
-              <span>02</span>
-              <div>
-                <h3>Confirm AI-use preferences and data restrictions</h3>
-                <p>Capture whether AI-assisted work is allowed, restricted, or disallowed, and document any data-sensitivity constraints before matching begins.</p>
-              </div>
-            </article>
-            <article class="timeline-step">
-              <span>03</span>
-              <div>
-                <h3>Recruit and match</h3>
-                <p>Source students through partner campuses and make curated matches based on fit, skills, availability, and project type.</p>
-              </div>
-            </article>
-            <article class="timeline-step">
-              <span>04</span>
-              <div>
-                <h3>Onboard and prepare</h3>
-                <p>Students complete professionalism and responsible-AI readiness training before the engagement begins.</p>
-              </div>
-            </article>
-            <article class="timeline-step">
-              <span>05</span>
-              <div>
-                <h3>Execute using structured AI workflow</h3>
-                <p>Students deliver bounded project work using approved workflow templates. Civic Launch monitors check-ins, reduces supervision burden, and steps in early when issues appear.</p>
-              </div>
-            </article>
-            <article class="timeline-step">
-              <span>06</span>
-              <div>
-                <h3>Handoff, evaluate, and capture lessons</h3>
-                <p>The deliverable is handed off with a workflow note documenting what AI was used for, what worked well, and what can be reused. Both student and host complete post-project evaluation.</p>
-              </div>
-            </article>
+        <div class="swimlane-container" data-reveal>
+          <div class="swimlane-headers">
+            <div class="swimlane-header sh-nonprofit">Nonprofit</div>
+            <div class="swimlane-header sh-civic">Civic Launch</div>
+            <div class="swimlane-header sh-student">Student</div>
           </div>
 
-          <div class="process-panels">
-            <article class="panel" data-reveal>
-              <p class="card-kicker">Civic Launch handles</p>
-              <ul>
-                <li>Project scoping and brief creation</li>
-                <li>Student recruiting and screening</li>
-                <li>Curated matching and onboarding</li>
-                <li>Payroll, compliance, and quality support</li>
-                <li>AI-use policy alignment and onboarding</li>
-                <li>Workflow handoff + best-practice capture</li>
-              </ul>
-            </article>
-
-            <article class="panel" data-reveal>
-              <p class="card-kicker">Partners contribute</p>
-              <ul>
-                <li>A designated nonprofit supervisor</li>
-                <li>Fast feedback on deliverables and questions</li>
-                <li>Clear signal on whether AI is allowed or restricted</li>
-                <li>Feedback on workflow usability + post-project evaluation</li>
-              </ul>
-            </article>
+          <div class="swimlane-step">
+            <span class="step-number">01</span>
+            <div class="swimlane-row">
+              <div class="swim-cell swim-active">
+                <strong>Describe the need</strong>
+                <span class="time-badge">~15 min</span>
+              </div>
+              <div class="swim-cell swim-active">
+                <strong>Translate into a scoped project brief</strong>
+              </div>
+              <div class="swim-cell swim-inactive"></div>
+            </div>
+            <h3 class="step-label">Scope</h3>
           </div>
+
+          <div class="swimlane-step">
+            <span class="step-number">02</span>
+            <div class="swimlane-row">
+              <div class="swim-cell swim-inactive"></div>
+              <div class="swim-cell swim-active">
+                <strong>Recruit, screen, and curate match</strong>
+              </div>
+              <div class="swim-cell swim-active">
+                <strong>Matched based on fit, skills, and availability</strong>
+              </div>
+            </div>
+            <h3 class="step-label">Match</h3>
+          </div>
+
+          <div class="swimlane-step">
+            <span class="step-number">03</span>
+            <div class="swimlane-row">
+              <div class="swim-cell swim-active">
+                <strong>Confirm baseline</strong>
+                <span class="time-badge">~10 min</span>
+              </div>
+              <div class="swim-cell swim-active">
+                <strong>Onboard and prepare student</strong>
+              </div>
+              <div class="swim-cell swim-active">
+                <strong>Complete readiness training</strong>
+              </div>
+            </div>
+            <h3 class="step-label">Kickoff</h3>
+          </div>
+
+          <div class="swimlane-step">
+            <span class="step-number">04</span>
+            <div class="swimlane-row">
+              <div class="swim-cell swim-inactive"></div>
+              <div class="swim-cell swim-active">
+                <strong>Monitor quality and check-ins</strong>
+              </div>
+              <div class="swim-cell swim-active">
+                <strong>Deliver bounded project work</strong>
+              </div>
+            </div>
+            <h3 class="step-label">Execute</h3>
+          </div>
+
+          <div class="swimlane-step">
+            <span class="step-number">05</span>
+            <div class="swimlane-row">
+              <div class="swim-cell swim-active">
+                <strong>Review final deliverable</strong>
+                <span class="time-badge">~30 min</span>
+              </div>
+              <div class="swim-cell swim-active">
+                <strong>Capture reusable assets and evaluate</strong>
+              </div>
+              <div class="swim-cell swim-active">
+                <strong>Document workflow and hand off</strong>
+              </div>
+            </div>
+            <h3 class="step-label">Handoff</h3>
+          </div>
+        </div>
+
+        <div class="supervision-callout" data-reveal>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <p><strong>Nonprofit time is concentrated in only 3 moments</strong> and totals about 2–3 hours per project. Civic Launch handles everything in between.</p>
         </div>
       </section>
 
-      <section class="difference section" id="ai-value">
+      <!-- ============================================================
+           Section 8: AI Is Not the Product
+           ============================================================ -->
+      <section class="section" id="ai-assets">
         <div class="section-heading" data-reveal>
-          <p class="eyebrow">How Civic Launch Creates AI Value</p>
-          <h2>Three engines that compound across every project.</h2>
+          <p class="eyebrow">Operating Assets</p>
+          <h2>AI is not the product. It is the capacity multiplier.</h2>
+          <p>Every Civic Launch project leaves behind concrete, reusable assets — not abstract technology promises.</p>
         </div>
-        
-        <div class="difference-grid engine-grid">
-          <article class="difference-card" data-reveal>
-            <div class="card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+
+        <div class="artifact-grid" data-reveal>
+          <article class="artifact-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
             </div>
-            <h3>Skills Engine</h3>
-            <p>Students learn verification, documentation, prompt discipline, and professional AI use through real paid project work.</p>
+            <h3>Scoped Brief</h3>
+            <p>Clear project definition with deliverables, hours, and success criteria.</p>
           </article>
-          
-          <article class="difference-card" data-reveal>
-            <div class="card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 3h-8l-2 4h12z"/><path d="m9 14 2 2 4-4"/></svg>
+
+          <article class="artifact-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
             </div>
-            <h3>Workflow Engine</h3>
-            <p>Projects use lightweight, human-supervised AI workflows for research, drafting, QA, and handoff.</p>
+            <h3>Workflow Template</h3>
+            <p>Step-by-step process a future team member can repeat.</p>
           </article>
-          
-          <article class="difference-card" data-reveal>
-            <div class="card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+
+          <article class="artifact-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             </div>
-            <h3>Learning Engine</h3>
-            <p>Each project produces workflow notes, reusable templates, and best-practice insights that improve future cohorts.</p>
+            <h3>Research Structure</h3>
+            <p>Organized sources, criteria, and methodology notes.</p>
+          </article>
+
+          <article class="artifact-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>QA Checklist</h3>
+            <p>Verification steps used before final handoff.</p>
+          </article>
+
+          <article class="artifact-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+            </div>
+            <h3>Final Handoff Note</h3>
+            <p>What was done, what AI was used, what worked, what to reuse.</p>
           </article>
         </div>
-        
-        <div data-reveal style="text-align: center; margin-top: 3rem;">
-          <p style="font-weight: 500; color: var(--text);">Civic Launch creates value at three levels: student capability, project quality, and cross-project learning.</p>
+
+        <div class="trust-strip" data-reveal>
+          <span>Human-supervised</span>
+          <span class="trust-dot" aria-hidden="true">·</span>
+          <span>Verified</span>
+          <span class="trust-dot" aria-hidden="true">·</span>
+          <span>Documented</span>
+          <span class="trust-dot" aria-hidden="true">·</span>
+          <span>Reusable</span>
         </div>
+
+        <p class="ai-opt-note" data-reveal>
+          Hosts choose whether AI-assisted work is allowed, restricted, or opt-out. Every decision is documented during scoping.
+        </p>
       </section>
 
-      <section class="audience section" id="nonprofits" style="background-color: var(--bg-alt);">
+      <!-- ============================================================
+           Section 9: One Project Creates Value on Both Sides
+           ============================================================ -->
+      <section class="section section-alt" id="value">
         <div class="section-heading" data-reveal>
-          <p class="eyebrow">For Nonprofit Leaders &amp; Executives</p>
-          <h2>Scale your capacity without scaling your bureaucracy.</h2>
-          <p>
-            Civic Launch is best suited for small and mid-sized nonprofits that need help on bounded, capacity-building
-            work but do not want to manage a full hiring process or open-ended intern supervision burden.
-          </p>
+          <p class="eyebrow">Two-Sided Value</p>
+          <h2>One project creates value on both sides.</h2>
         </div>
 
-        <div class="audience-layout">
-          <div class="card-stack">
-            <article class="info-card" data-reveal>
-              <h3>Best-fit project categories</h3>
-              <ul>
-                <li>Social media content and communications planning</li>
-                <li>Grant prospect research and donor database cleanup</li>
-                <li>Basic data analysis, reporting, and survey work</li>
-                <li>Website updates, email marketing, and operations support</li>
-              </ul>
-            </article>
-
-            <article class="info-card" data-reveal>
-              <h3>Ideal Pilot Host Profile</h3>
-              <ul>
-                <li>Bounded 15–25 hour project</li>
-                <li>Designated supervisor</li>
-                <li>48-hour feedback turnaround</li>
-                <li>Willingness to complete brief evaluation surveys</li>
-                <li>Comfort with remote-first student work</li>
-                <li>AI preference defined during scoping</li>
-              </ul>
-            </article>
-
-            <article class="info-card not-yet-fit-card" data-reveal>
-              <h3>Not Yet a Fit</h3>
-              <ul>
-                <li>Open-ended ongoing staff augmentation</li>
-                <li>Sensitive data environments without clear controls</li>
-                <li>Projects requiring daily supervision</li>
-                <li>Unclear deliverables or no designated supervisor</li>
-                <li>Urgent work that cannot tolerate a pilot learning curve</li>
-              </ul>
-            </article>
-
-            <article class="info-card" data-reveal>
-              <h3>Executive ROI Metrics</h3>
-              <ul>
-                <li><strong>Zero HR overhead:</strong> Civic Launch handles W-2s, compliance, and payroll.</li>
-                <li><strong>Scoped outcomes:</strong> projects are defined around concrete deliverables, not vague extra help.</li>
-                <li><strong>Managed supervision:</strong> target host burden remains about 2–3 total hours.</li>
-                <li><strong>Workflow handoff + playbook access:</strong> hosts receive project-specific workflow documentation, reusable handoff notes, and access to tested best practices appropriate to their project type.</li>
-                <li><strong>Growing playbook:</strong> as projects accumulate, nonprofits benefit from an improving library of best practices by project type and host context.</li>
-              </ul>
-            </article>
-          </div>
-
-          <aside class="executive-brief-card" data-reveal>
-            <div class="brief-header">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              Executive Brief Checklist
-            </div>
-            <ul class="brief-timeline">
-               <li>
-                 <strong>Scoping (15 mins)</strong>
-                 <p>Outline a 15-25 hour project need.</p>
-               </li>
-               <li>
-                 <strong>Matching (2-5 days)</strong>
-                 <p>We source an aligned, engaged student.</p>
-               </li>
-               <li>
-                 <strong>Kickoff (10 mins)</strong>
-                 <p>Confirm the deliverable baseline.</p>
-               </li>
-               <li>
-                 <strong>Feedback (Ongoing)</strong>
-                 <p>Review work milestones within 48 hours.</p>
-               </li>
+        <div class="dual-value" data-reveal>
+          <div class="value-column value-students">
+            <h3>For Students</h3>
+            <ul>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Paid experience ($18–$22/hr target)</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Résumé-ready output</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> AI workflow fluency</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Professional communication</li>
             </ul>
-            <a class="button button-secondary" href="https://forms.cloud.microsoft/r/WkhSGKYU7G" target="_blank" rel="noopener" style="width: 100%; margin-top: 1rem;">
-              Submit a Project Need
-            </a>
-          </aside>
+          </div>
+
+          <div class="value-column value-nonprofits">
+            <h3>For Nonprofits</h3>
+            <ul>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Finished project</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> No HR burden</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Structured QA</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Reusable workflow</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="value-synthesis" data-reveal>
+          The same completed project creates both immediate output and longer-term capability.
+        </p>
+      </section>
+
+      <!-- ============================================================
+           Section 10: Team & Operating Model
+           ============================================================ -->
+      <section class="section" id="team">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Who Runs This</p>
+          <h2>Team &amp; Operating Model</h2>
+        </div>
+
+        <div class="team-layout" data-reveal>
+          <div class="founder-card-new">
+            <p class="eyebrow">Founder &amp; AI Workflow Architect</p>
+            <h3>John Garcia</h3>
+            <p class="founder-title">Associate Professor of Finance &amp; Analytics · California Lutheran University</p>
+            <ul class="founder-responsibilities">
+              <li>Designs supervised AI workflows and QA systems</li>
+              <li>Trains students in professional, client-ready AI use</li>
+              <li>Leads partnerships, fundraising, and strategic oversight</li>
+            </ul>
+            <p>
+              John Garcia is a first-generation college graduate whose career spans more than two decades in finance
+              and analytics leadership at Ernst &amp; Young and Toyota North America. After earning a doctorate, he
+              moved into higher education to invest in people, not just performance.
+            </p>
+            <p>
+              Today he bridges research, teaching, and real-world experience in behavioral finance, machine learning,
+              and AI — while serving as a board member and treasurer of Westminster Free Clinic. Civic Launch is the
+              operational expression of that work: a narrowly scoped pilot designed to expand access, reduce friction
+              for nonprofits, and test a model carefully enough to improve and scale responsibly.
+            </p>
+            <div class="founder-links">
+              <a class="text-link" href="https://garcijo4.github.io/john.garcia/" target="_blank" rel="noopener">Personal Website</a>
+              <a class="text-link" href="https://www.linkedin.com/in/johngarcia4/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="text-link" href="https://www.callutheran.edu/faculty/profile.html?id=jgarcia" target="_blank" rel="noopener">University Profile</a>
+            </div>
+          </div>
+
+          <div class="role-cards">
+            <article class="role-card" data-reveal>
+              <div class="card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+              </div>
+              <h3>Program Manager</h3>
+              <p class="role-status">Hiring for pilot launch</p>
+              <p>Manages host pipeline, student matching, and day-to-day project oversight.</p>
+            </article>
+
+            <article class="role-card" data-reveal>
+              <div class="card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3>Student Fellows</h3>
+              <p>Paid W-2 workers completing scoped projects. Trained in professionalism and responsible AI use before placement.</p>
+            </article>
+
+            <article class="role-card" data-reveal>
+              <div class="card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
+              </div>
+              <h3>Nonprofit Host Supervisors</h3>
+              <p>Designated contacts at each host organization. Provide project context, feedback, and final acceptance.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="audience section contrast-panel" id="students">
+      <!-- ============================================================
+           Section 11: Colleges & the Learning Lab
+           ============================================================ -->
+      <section class="section section-alt" id="colleges">
         <div class="section-heading" data-reveal>
-          <p class="eyebrow">For Students &amp; Recent Grads</p>
-          <h2>Earn income, gain evidence of your skills, and work on projects that matter locally.</h2>
+          <p class="eyebrow">Campus Partnerships</p>
+          <h2>A learning lab for campus and community.</h2>
           <p>
-            Civic Launch is designed for students and recent graduates who are often shut out of unpaid internships,
-            especially first-generation, low-income, and underrepresented students balancing school, work, and life.
-          </p>
-        </div>
-
-        <div class="student-grid">
-          <article class="student-card" data-reveal>
-            <div class="card-icon auto-width">
-              <span>$18-$22/hr</span>
-            </div>
-            <h3>Paid and practical</h3>
-            <p>Projects are built around 15-25 hours and this target pay range.</p>
-          </article>
-          <article class="student-card" data-reveal>
-            <div class="card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </div>
-            <h3>Flexible by design</h3>
-            <p>Micro-internships work over days or weeks, not around a rigid 10-12 week schedule.</p>
-          </article>
-          <article class="student-card" data-reveal>
-            <div class="card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.912 5.813a2 2 0 0 0 1.272 1.278L21 12l-5.816 1.91a2 2 0 0 0-1.275 1.278L12 21l-1.91-5.812a2 2 0 0 0-1.277-1.278L3 12l5.813-1.91a2 2 0 0 0 1.278-1.277z"/></svg>
-            </div>
-            <h3>AI literacy included</h3>
-            <p>Students complete responsible-use training focused on prompting, verification, disclosure, confidentiality, and professional judgment, then receive approved tool access during active placements.</p>
-          </article>
-          <article class="student-card" data-reveal>
-            <div class="card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
-            <h3>Career translation built in</h3>
-            <p>Each project is designed to become evidence: resume bullets, portfolio stories, interview examples, and stronger follow-on opportunities.</p>
-          </article>
-        </div>
-
-        <div class="student-journey" data-reveal>
-          <div>
-            <span>1</span>
-            <p>Register interest through partner campus channels.</p>
-          </div>
-          <div>
-            <span>2</span>
-            <p>Complete professionalism and AI-responsible-use readiness modules.</p>
-          </div>
-          <div>
-            <span>3</span>
-            <p>Get matched to a project aligned with skills, interests, and availability.</p>
-          </div>
-          <div>
-            <span>4</span>
-            <p>Complete the work, document results, and carry the experience forward.</p>
-          </div>
-        </div>
-
-        <div class="student-learns" data-reveal>
-          <h3>What students actually learn</h3>
-          <ul>
-            <li>Professional communication and client-ready deliverables</li>
-            <li>Bounded project execution using structured AI workflows</li>
-            <li>Responsible AI use: prompting, verification, and documentation</li>
-            <li>AI workflow fluency: research, drafting, QA, and handoff</li>
-            <li>Career translation of project work into portfolio evidence</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="audience section section-alt" id="colleges">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">For Colleges</p>
-          <h2>Extend experiential learning access without asking campus teams to manage every employer detail.</h2>
-          <p>
-            Civic Launch is designed to complement career services, community engagement, and Federal Work-Study
-            pathways by providing a structured, nonprofit-facing intermediary instead of another disconnected posting board.
+            Civic Launch complements career services, community engagement, and Federal Work-Study
+            pathways through a structured, nonprofit-facing intermediary.
           </p>
         </div>
 
@@ -604,7 +725,7 @@
             </article>
             <article class="college-card" data-reveal>
               <h3>Federal Work-Study potential</h3>
-              <p>Use off-campus nonprofit pathways and campus coordination to improve affordability and support scale where institutional workflows allow.</p>
+              <p>Use off-campus nonprofit pathways to improve affordability where institutional workflows allow.</p>
             </article>
             <article class="college-card" data-reveal>
               <h3>Documented learning outcomes</h3>
@@ -622,312 +743,140 @@
               </ul>
             </aside>
 
-            <article class="info-card college-needs-card" data-reveal>
-              <h3>What Civic Launch needs from college partners</h3>
+            <article class="info-card campus-returns-card" data-reveal>
+              <h3>What campus gets back</h3>
               <ul>
-                <li>One point person for coordination</li>
-                <li>Access to student recruitment channels</li>
-                <li>Career services partnership</li>
-                <li>FWS workflow coordination where applicable</li>
-                <li>Light-touch evaluation/data-sharing support</li>
+                <li>Guest lecture from Civic Launch on AI workflows</li>
+                <li>Mini-case study from each completed project</li>
+                <li>Nonprofit AI workflow playbook</li>
+                <li>Student reflection archive</li>
+                <li>Panel or podcast on lessons learned</li>
               </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="about section" id="about">
+      <!-- ============================================================
+           Section 12: FAQ
+           ============================================================ -->
+      <section class="faq section" id="faqs" style="background-color: var(--bg);">
         <div class="section-heading" data-reveal>
-          <p class="eyebrow">About Us</p>
-          <h2>A local proof-of-concept designed to test what equitable early-career access can look like.</h2>
-        </div>
-
-        <div class="about-layout">
-          <article class="about-story" data-reveal>
-            <p>
-              Civic Launch grew out of a simple mismatch in the ecosystem. The students who benefit most from paid
-              experience often face the highest barriers to getting it. At the same time, nonprofit organizations often
-              have valuable project work that never quite gets done because staffing and budget constraints are constant.
-            </p>
-            <p>
-              The pilot is deliberately narrow: Ventura County, nonprofit partners only, short-term projects, managed
-              matching, and measured outcomes. That restraint is part of the design. Civic Launch is trying to prove a
-              model carefully enough that it can be trusted, funded, and improved over time.
-            </p>
-            <p>
-              The pilot is not launching as an open-ended concept. It is gated by legal, operational, partnership, and
-              funding prerequisites, including employer-of-record review, host readiness, student readiness, funding
-              commitments, and agreed institutional boundaries.
-            </p>
-          </article>
-
-          <div class="about-principles">
-            <article class="principle-card" data-reveal>
-              <h3>Mission-led</h3>
-              <p>The work starts with nonprofit capacity and student equity, not with platform growth.</p>
-            </article>
-            <article class="principle-card" data-reveal>
-              <h3>Human-guided</h3>
-              <p>AI can improve preparation and productivity, but judgment, verification, and partner trust stay human.</p>
-            </article>
-           <article class="principle-card" data-reveal>
-              <h3>Evidence-focused</h3>
-              <p>The pilot is structured around measurable completion, satisfaction, return rates, cost discipline, student development, and nonprofit capacity gain.</p>
-            </article>
-          </div>
-        </div>
-
-        <div class="video-showcase" id="elevator-pitch" data-reveal>
-          <div class="video-showcase-header">
-            <p class="eyebrow">The Elevator Pitch</p>
-            <h3>&lt;1.75 Minutes on why Civic Launch matters.</h3>
-          </div>
-          <div class="video-player-container">
-            <div class="video-player-wrapper">
-              <video
-                id="pitch-video"
-                class="pitch-video"
-                controls
-                preload="metadata"
-                poster=""
-                playsinline
-              >
-                <source src="./assets/Civic_Launch_Pitch_with_captions.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <button class="video-play-overlay" id="video-play-btn" aria-label="Play elevator pitch video">
-                <div class="play-icon-ring">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" stroke="none">
-                    <polygon points="6 3 20 12 6 21 6 3"/>
-                  </svg>
-                </div>
-                <span class="play-label">Play Video<span class="play-duration"> · 1:40</span></span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="founder-section" data-reveal>
-          <div class="founder-content">
-            <p class="eyebrow">Meet the Founder</p>
-            <h3>John Garcia</h3>
-            <p class="founder-title">Associate Professor of Finance &amp; Analytics · California Lutheran University</p>
-            <p>
-              John Garcia is a first-generation college graduate whose career spans more than two decades in finance
-              and analytics leadership at Ernst &amp; Young and Toyota North America. After earning a doctorate, he
-              moved into higher education to invest in people, not just performance.
-            </p>
-            <p>
-              Today he bridges research, teaching, and real-world experience in behavioral finance, machine learning,
-              and AI — while serving as a board member and treasurer of Westminster Free Clinic. Civic Launch is the
-              operational expression of that work: a narrowly scoped pilot designed to expand access, reduce friction
-              for nonprofits, and test a model carefully enough to improve and scale responsibly.
-            </p>
-            <div class="founder-links">
-              <a class="text-link" href="https://garcijo4.github.io/john.garcia/" target="_blank" rel="noopener">
-                Personal Website
-              </a>
-              <a class="text-link" href="https://www.linkedin.com/in/johngarcia4/" target="_blank" rel="noopener">
-                LinkedIn
-              </a>
-              <a class="text-link" href="https://www.callutheran.edu/faculty/profile.html?id=jgarcia" target="_blank" rel="noopener">
-                University Profile
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="faq section section-alt" id="faqs">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">FAQs</p>
-          <h2>Common questions from nonprofits, students, and campus partners.</h2>
+          <p class="eyebrow">Common Questions</p>
+          <h2>Answers for nonprofits, students, and partners.</h2>
         </div>
 
         <div class="faq-list">
           <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">Is Civic Launch a job board or marketplace?</button>
+            <button class="faq-question" type="button" aria-expanded="false">Is Civic Launch a job board?</button>
             <div class="faq-answer">
-              <p>
-                No. Civic Launch is designed as a managed intermediary. The team scopes projects, recruits students,
-                curates matches, supports onboarding, and stays involved throughout the engagement.
-              </p>
+              <p>No. Civic Launch is a managed nonprofit talent intermediary. The team scopes projects, recruits students, curates matches, handles onboarding, and supports quality throughout. It is not a self-serve job board or volunteer matching platform.</p>
             </div>
           </article>
 
           <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">Are students paid?</button>
+            <button class="faq-question" type="button" aria-expanded="false">How much nonprofit supervision time is required?</button>
             <div class="faq-answer">
-              <p>
-                Yes. The pilot is built around paid student work through a W-2 employer-of-record model, with a target
-                pay range of roughly $18-$22 per hour.
-              </p>
+              <p>About 2–3 hours total across three touchpoints: a 15-minute scoping call, a 10-minute kickoff, and a 30-minute final review. Civic Launch handles everything in between.</p>
             </div>
           </article>
 
           <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">What kinds of nonprofit projects fit best?</button>
+            <button class="faq-question" type="button" aria-expanded="false">Do hosts have to use AI?</button>
             <div class="faq-answer">
-              <p>
-                Early project types include communications, social content, grant prospect research, donor database
-                cleanup, website updates, survey support, basic data analysis, and other clearly bounded deliverables.
-              </p>
+              <p>No. AI is optional. During scoping, hosts choose whether AI-assisted work is allowed, restricted, or fully opt-out. Every decision is documented before the project begins.</p>
             </div>
           </article>
 
           <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">Is AI required for every project?</button>
+            <button class="faq-question" type="button" aria-expanded="false">What exactly does a nonprofit receive at the end of a project?</button>
             <div class="faq-answer">
-              <p>
-                No. AI is an enablement layer, not a requirement. Hosts can opt in, opt out, or restrict AI-assisted
-                work depending on the project and the sensitivity of the information involved.
-              </p>
+              <p>A finished deliverable, a workflow handoff note documenting what was done and what worked, and reusable templates or process documentation where applicable.</p>
             </div>
           </article>
 
           <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">How much time does a nonprofit supervisor need to commit?</button>
+            <button class="faq-question" type="button" aria-expanded="false">How is this different from volunteering, consulting, or internship matching?</button>
             <div class="faq-answer">
-              <p>
-                The pilot targets approximately 2-3 total hours of host supervision per project, with Civic Launch
-                absorbing much of the scoping, monitoring, and coordination burden.
-              </p>
+              <p>Students are paid W-2 workers, not volunteers or contractors. Civic Launch manages scoping, matching, onboarding, quality support, and payroll. Work is scoped, bounded, and documented with reusable handoffs — a managed micro-internship model, not a posting board.</p>
             </div>
           </article>
 
           <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">Which colleges are part of the initial pilot design?</button>
+            <button class="faq-question" type="button" aria-expanded="false">How are students paid?</button>
             <div class="faq-answer">
-              <p>
-                The initial launch platform centers on California Lutheran University, CSU Channel Islands, and the
-                Ventura County Community College District, including Oxnard, Ventura, and Moorpark Colleges.
-              </p>
+              <p>Through W-2 employment via an employer-of-record model. The target pay range is $18–$22 per hour. Students are employees, not independent contractors.</p>
             </div>
           </article>
 
           <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">Is Civic Launch also serving government agencies?</button>
+            <button class="faq-question" type="button" aria-expanded="false">What kinds of projects are a fit?</button>
             <div class="faq-answer">
-              <p>
-                Not in Year 1. The pilot scope is intentionally limited to nonprofit organizations so the program can
-                stay manageable, compliant, and focused while it proves the model.
-              </p>
+              <p>Grant prospect research, communications and social media, donor database cleanup, volunteer onboarding design, basic data analysis, website updates, and other bounded deliverables. Most projects are 15–25 hours. Some analytics or dashboard projects are 25–40 hours.</p>
             </div>
           </article>
 
           <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">Will the work be remote or in person?</button>
+            <button class="faq-question" type="button" aria-expanded="false">Is Civic Launch already launched?</button>
             <div class="faq-answer">
-              <p>
-                Most projects are expected to be primarily remote, with optional in-person components when a local
-                partner and project make that useful.
-              </p>
+              <p>No. The Ventura County pilot is in development. Launch is contingent on legal, funding, and partnership readiness gates being cleared.</p>
             </div>
           </article>
 
           <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">What kind of nonprofits are the best fit for the pilot?</button>
+            <button class="faq-question" type="button" aria-expanded="false">How is Civic Launch funded?</button>
             <div class="faq-answer">
-              <p>
-                The pilot is best suited for nonprofits with a bounded 15–25 hour project, a designated supervisor,
-                and a willingness to respond quickly to questions and complete a short evaluation process.
-              </p>
-            </div>
-          </article>
-
-          <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">What happens if a host does not want AI used on a project?</button>
-            <div class="faq-answer">
-              <p>
-                Civic Launch is designed to work with AI-enabled, AI-restricted, and AI-opt-out projects. AI is an
-                enablement layer, not a requirement.
-              </p>
-            </div>
-          </article>
-
-          <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">Does Civic Launch provide a reusable handoff to nonprofits?</button>
-            <div class="faq-answer">
-              <p>
-                Yes. Every completed project generates a workflow handoff note documenting what AI was used for, what worked well, and what can be reused. Where appropriate, hosts also receive reusable templates and process documentation. Over time, these handoff notes feed into Civic Launch's growing library of project-type-specific best practices.
-              </p>
-            </div>
-          </article>
-
-          <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">Is Civic Launch already fully launched?</button>
-            <div class="faq-answer">
-              <p>
-                No. The Ventura County pilot is in development and will move forward only after legal, funding,
-                partnership, and readiness gates are cleared.
-              </p>
+              <p>Civic Launch is seeking an initial anchor grant within a broader Year 1 funding stack. Philanthropic support helps launch the model. Over time, support shifts toward Federal Work-Study and host co-pay sustainability.</p>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="pilot-shape section" id="pilot-shape" data-reveal>
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Help Shape the Pilot</p>
-          <h2>We are actively building the Ventura County pilot and looking for the right early partners.</h2>
-        </div>
-
-        <div class="pilot-shape-grid">
-          <article class="pilot-shape-card" data-reveal>
-            <div class="pilot-shape-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <h3>For Funders</h3>
-            <p>Seeking $75,000–$125,000 in Year 1 funding to support pilot staffing, project subsidy, AI tool access, workflow template development, and pilot evaluation infrastructure.</p>
-          </article>
-
-          <article class="pilot-shape-card" data-reveal>
-            <div class="pilot-shape-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
-            </div>
-            <h3>For University Partners</h3>
-            <p>Seeking one point person, recruitment/posting support, career services partnership, FWS workflow coordination where possible, and light evaluation support.</p>
-          </article>
-
-          <article class="pilot-shape-card" data-reveal>
-            <div class="pilot-shape-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h3>For Advisors</h3>
-            <p>Seeking expertise in California employment and HR, nonprofit operations, philanthropy, career services/FWS, and AI governance.</p>
-          </article>
-        </div>
-
-        <div class="pilot-shape-action">
-          <a class="button" href="mailto:jgarcia@callutheran.edu?subject=Civic%20Launch%20Partnership%20Inquiry">Contact Civic Launch About Partnership</a>
+      <!-- ============================================================
+           Section 13: Final CTA
+           ============================================================ -->
+      <section class="final-cta section" id="contact" data-reveal>
+        <div class="final-cta-inner">
+          <div class="final-cta-copy">
+            <p class="eyebrow">One Project. Three Outcomes.</p>
+            <h2>One Civic Launch project creates:</h2>
+            <ul class="three-output">
+              <li>A paid student opportunity</li>
+              <li>A completed nonprofit deliverable</li>
+              <li>A reusable workflow for future use</li>
+            </ul>
+          </div>
+          <div class="final-cta-actions">
+            <a class="button" href="https://forms.cloud.microsoft/r/WkhSGKYU7G" target="_blank" rel="noopener" id="cta-final-nonprofit">
+              Nonprofits: Submit a Project Need
+            </a>
+            <a class="button button-secondary" href="https://forms.cloud.microsoft/r/b0c2xCPjq0" target="_blank" rel="noopener" id="cta-final-student">
+              Students: Register Interest
+            </a>
+            <a class="button button-secondary" href="mailto:jgarcia@callutheran.edu?subject=Civic%20Launch%20Partnership%20Inquiry" id="cta-final-funder">
+              Funders / Partners: Start a Conversation
+            </a>
+          </div>
         </div>
       </section>
 
-      <section class="cta section" data-reveal>
-        <div class="cta-copy">
-          <p class="eyebrow">Ready to shape the Ventura County pilot?</p>
-          <h2>Partner with Civic Launch as a nonprofit host, student participant, or college collaborator.</h2>
-        </div>
-        <div class="cta-actions">
-          <a class="button" href="https://forms.cloud.microsoft/r/WkhSGKYU7G" target="_blank" rel="noopener">Submit a Nonprofit Project Need</a>
-          <a class="button button-secondary" href="https://forms.cloud.microsoft/r/b0c2xCPjq0" target="_blank" rel="noopener">Register Student Interest</a>
-          <a class="button button-secondary" href="mailto:jgarcia@callutheran.edu?subject=Civic%20Launch%20Partnership">Discuss a Partnership or Funding Conversation</a>
-        </div>
-      </section>
     </main>
 
+    <!-- ============================================================
+         Section 14: Footer (utility area)
+         ============================================================ -->
     <footer class="site-footer">
       <div class="footer-brand">
         <img src="./assets/civic-launch-icon.png" alt="" class="footer-mark">
         <div>
           <strong>Civic Launch</strong>
-          <p>Paid Micro-Internships. Nonprofit Capacity. Student Careers.</p>
+          <p>Managed nonprofit talent intermediary</p>
         </div>
       </div>
 
       <div class="footer-meta">
-        <p>Ventura County pilot in development for nonprofit hosts, students, college partners, and early funders.</p>
-        <p class="footer-gate-note">Pilot launch is contingent on legal, funding, and partnership gates.</p>
+        <p>Ventura County pilot in development.</p>
+        <p class="footer-gate-note">Pilot launch contingent on legal, funding, and partnership gates.</p>
         <a href="mailto:jgarcia@callutheran.edu">jgarcia@callutheran.edu</a>
       </div>
     </footer>
