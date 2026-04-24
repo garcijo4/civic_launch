@@ -2264,11 +2264,6 @@ section[id] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .project-cards .project-card:last-child {
-    grid-column: 1 / -1;
-    max-width: 50%;
-    justify-self: center;
-  }
 
   .artifact-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2334,10 +2329,6 @@ section[id] {
     grid-template-columns: 1fr;
   }
 
-  .project-cards .project-card:last-child {
-    max-width: 100%;
-    grid-column: auto;
-  }
 
   .artifact-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
