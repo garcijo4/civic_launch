@@ -857,6 +857,8 @@ section[id] {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   border-radius: var(--radius-lg);
   background: #fff;
   border: 1px solid var(--line);
@@ -897,6 +899,9 @@ section[id] {
 }
 
 .project-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   margin: 0;
   padding: 0;
 }
@@ -931,6 +936,7 @@ section[id] {
 
 .project-handoff {
   background: var(--green-light);
+  margin-top: auto;
 }
 
 .project-handoff dt {
