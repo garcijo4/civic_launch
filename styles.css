@@ -728,9 +728,15 @@ section[id] {
 
 .beachhead-tiers {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .beachhead-tiers {
+    grid-template-columns: 1fr;
+  }
 }
 
 .beachhead-tier {
@@ -812,14 +818,15 @@ section[id] {
 }
 
 .tier-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.75rem;
+  display: flex;
+  justify-content: center;
   margin-top: 1.5rem;
 }
 
 .tier-stats div {
-  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 1.5rem;
   border-radius: var(--radius-sm);
   background: rgba(255, 255, 255, 0.08);
 }
@@ -838,12 +845,7 @@ section[id] {
   line-height: 1.5;
 }
 
-.tier-source {
-  margin-top: 1rem !important;
-  font-size: 0.75rem !important;
-  color: rgba(255, 255, 255, 0.4) !important;
-  line-height: 1.5;
-}
+
 
 /* ============================================================
    Section 5: Project Cards
@@ -1473,6 +1475,7 @@ section[id] {
    ============================================================ */
 
 .future-scale-note {
+  grid-column: 1 / -1;
   padding: 1rem 1.5rem;
   border-radius: var(--radius-md);
   background: var(--bg-alt);
@@ -1637,7 +1640,7 @@ section[id] {
 
 .team-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  grid-template-columns: 1fr;
   gap: 1.5rem;
   align-items: start;
   margin-top: 2.5rem;
@@ -1735,6 +1738,7 @@ section[id] {
 
 .role-cards {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -2350,9 +2354,7 @@ section[id] {
     grid-template-columns: 1fr;
   }
 
-  .tier-stats {
-    grid-template-columns: 1fr;
-  }
+
 
   .college-grid {
     grid-template-columns: 1fr;
@@ -2448,5 +2450,808 @@ section[id] {
   [data-reveal] {
     opacity: 1;
     transform: none;
+  }
+}
+
+
+/* ==========================================================================
+   V5 Alignment Styles
+   ========================================================================== */
+
+/* The Human Problem */
+.story-stat {
+  margin-top: 1rem;
+  color: var(--navy);
+  font-weight: 700;
+}
+.methodology-note {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Three Converging Forces */
+.forces-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+.force-card {
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.force-stat {
+  font-size: 3rem;
+  color: var(--navy);
+  margin: 0;
+  line-height: 1;
+}
+.force-label {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: var(--teal);
+}
+.force-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+.forces-closing {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Outcomes */
+.value-metrics {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+.value-metrics .metric h3 {
+  font-size: 2rem;
+  color: var(--teal);
+  margin: 0;
+}
+.value-metrics .metric p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Sustainability Phases */
+.phases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.phase-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+}
+.phase-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.phase-card:nth-child(1) .phase-badge { background: var(--navy); color: #fff; }
+.phase-card:nth-child(2) .phase-badge { background: var(--teal); color: #fff; }
+.phase-card:nth-child(3) .phase-badge { background: var(--gold); color: #fff; }
+.phase-card h3 {
+  margin-bottom: 1rem;
+  color: var(--navy);
+}
+.phase-card ul {
+  padding-left: 1.2rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.phase-card ul li { margin-bottom: 0.5rem; }
+.steady-state-headline {
+  margin-top: 2rem;
+  text-align: center;
+  background: var(--green-light);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--teal);
+}
+.steady-state-headline h3 {
+  margin: 0;
+  color: var(--teal);
+}
+
+/* Moats */
+.moats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.moat-card {
+  background: var(--bg-alt);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+}
+.moat-card:nth-child(1) { border-top: 3px solid var(--navy); }
+.moat-card:nth-child(2) { border-top: 3px solid var(--teal); }
+.moat-card:nth-child(3) { border-top: 3px solid var(--gold); }
+.moat-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--navy);
+}
+.moat-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Competitive Gap Table */
+.table-container {
+  margin-top: 2.5rem;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+}
+.competitor-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.competitor-table thead { background: var(--bg-alt); }
+.competitor-table th {
+  padding: 1rem;
+  border-bottom: 2px solid var(--line);
+}
+.competitor-table th:first-child, .competitor-table td:first-child { text-align: left; }
+.competitor-table tbody tr.highlight-row { background: rgba(28, 114, 147, 0.05); }
+.competitor-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+.competitor-table tbody tr:last-child td { border-bottom: none; }
+
+/* Traction & Evidence */
+.traction-list {
+  margin-top: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+}
+.traction-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.traction-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  font-size: 1rem;
+  color: var(--muted);
+}
+.traction-list li svg { flex-shrink: 0; }
+.traction-list li span { line-height: 1.5; }
+
+/* Metrics & Milestones */
+.metrics-milestones-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+.metrics-block, .timeline-block {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  padding: 2rem;
+}
+.metrics-block { background: var(--bg-alt); }
+.timeline-block {
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+}
+.metrics-block h3, .timeline-block h3 {
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+.metrics-block ul {
+  padding-left: 1.5rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.risk-block {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line-strong);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.risk-block strong { color: var(--navy); }
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.timeline-item { display: flex; gap: 1rem; }
+.timeline-date {
+  font-weight: 800;
+  color: var(--teal);
+  min-width: 90px;
+}
+.timeline-content { color: var(--muted); }
+
+/* Final CTA */
+.final-cta-copy {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+}
+.final-cta-copy .eyebrow { margin-bottom: 0.5rem; }
+.final-cta-copy h2 { margin-bottom: 1.5rem; }
+.five-line-summary {
+  list-style: none;
+  padding: 0;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--navy);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Media Queries for Responsive Grids */
+@media screen and (max-width: 768px) {
+  .forces-grid, .phases-grid, .moats-grid {
+    grid-template-columns: 1fr;
+  }
+  .metrics-milestones-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ==========================================================================
+   Refined Layout Adjustments
+   ========================================================================== */
+
+/* Final CTA Section */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+.summary-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  text-align: left;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.summary-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+.summary-icon {
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.summary-card h3 {
+  font-size: 1.15rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.summary-card p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+.final-cta-actions-container {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+.final-cta-actions-container h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.final-cta-copy {
+  max-width: 900px !important;
+}
+
+/* Unified Colleges Section */
+.college-unified-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.unified-main h3 {
+  color: var(--navy);
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.unified-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.unified-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+.unified-card h4 {
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.unified-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+.unified-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .college-unified-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .summary-cards {
+    grid-template-columns: 1fr;
+  }
+  .unified-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Design Review UX/UI Enhancements
+   ========================================================================== */
+
+/* 1. Sticky Navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  padding: 1rem 0;
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+.header-mark {
+  width: 28px;
+  height: 28px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header-nav a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.header-nav a:hover {
+  color: #fff;
+}
+.header-nav .nav-funder-link {
+  color: var(--gold);
+}
+.header-nav .header-cta {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+  background: var(--teal);
+  border: none;
+}
+.header-nav .header-cta:hover {
+  background: #17607a;
+}
+
+/* 2. Hero Background Image */
+.hero {
+  position: relative;
+  background: var(--navy);
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25; /* Keep it subtle so text is readable */
+  mix-blend-mode: luminosity; /* Blend it nicely into the navy background */
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* 3. Social Proof Quote */
+.social-proof-quote {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: var(--navy);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+.social-proof-quote::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 6rem;
+  color: rgba(255, 255, 255, 0.1);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+.social-proof-quote blockquote {
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0 0 1.5rem 0;
+  position: relative;
+  z-index: 1;
+}
+.quote-author {
+  display: flex;
+  flex-direction: column;
+}
+.quote-author strong {
+  color: var(--gold);
+  font-size: 1.05rem;
+}
+.quote-author span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/* 4. Before & After Transformation */
+.transformation-block {
+  margin: 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.transform-before, .transform-after {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.transform-label {
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  min-width: 65px;
+  text-align: center;
+}
+.transform-before .transform-label {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+.transform-before p {
+  color: var(--muted);
+  margin: 0;
+}
+.transform-after .transform-label {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+.transform-after p {
+  color: var(--navy);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* 5. Funder Overview Section */
+.section-funder-overview {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 4rem 0 0 0;
+}
+.funder-overview-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+.funder-header-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.funder-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: var(--navy);
+  color: var(--gold);
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+.funder-overview-header h2 {
+  font-size: 2.5rem;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+.funder-overview-header p {
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+.funder-subsection {
+  padding: 4rem 2rem;
+}
+.funder-subsection.section-alt {
+  background: transparent;
+}
+.funder-subsection.section-dark {
+  background: var(--navy);
+  color: #fff;
+}
+
+/* Responsive Overrides */
+@media screen and (max-width: 900px) {
+  .header-nav {
+    display: none; /* Hide nav on mobile for simplicity, or implement a hamburger menu later */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .role-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Stacked Colleges Section Update
+   ========================================================================== */
+
+.college-stacked-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.college-stacked-layout h3 {
+  color: var(--navy);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.stacked-cards-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.stacked-cards-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .stacked-cards-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stacked-cards-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stacked-cards-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Beachhead Market Rewrite
+   ========================================================================== */
+
+.tier-desc {
+  font-size: 0.95rem;
+  color: inherit;
+  opacity: 0.85;
+  margin-bottom: 0.5rem;
+}
+.tier-support {
+  font-size: 0.85rem;
+  color: inherit;
+  opacity: 0.85;
+  margin-top: 1rem;
+}
+.tier-primary .tier-desc,
+.tier-primary .tier-support {
+  color: rgba(255, 255, 255, 0.85);
+}
+.tier-secondary .tier-desc,
+.tier-secondary .tier-support,
+.tier-tertiary .tier-desc,
+.tier-tertiary .tier-support {
+  color: var(--muted);
+}
+
+.tier-primary .tier-source {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.9); /* A11y WCAG AA contrast bump */
+  font-style: italic;
+}
+
+/* Secondary & Tertiary Stats Overrides */
+.tier-primary .tier-stats strong {
+  font-size: 1.75rem;
+}
+.tier-secondary .tier-stats div {
+  background: var(--bg-accent);
+}
+.tier-secondary .tier-stats strong {
+  color: var(--navy);
+  font-size: 1.75rem; /* Matches primary weight */
+}
+.tier-secondary .tier-stats span {
+  color: var(--muted);
+}
+
+.tier-tertiary .tier-stats div {
+  background: var(--bg-alt);
+}
+.tier-tertiary .tier-stats strong {
+  color: var(--navy);
+  font-size: 1.75rem;
+}
+.tier-tertiary .tier-stats span {
+  color: var(--muted);
+}
+
+/* Methodology Expandable */
+.methodology-container {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+.methodology-details {
+  display: inline-block;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.5rem;
+  max-width: 800px;
+  width: 100%;
+}
+.methodology-details summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+  list-style: none; /* Hide default arrow in some browsers */
+}
+.methodology-details summary::-webkit-details-marker {
+  display: none;
+}
+.methodology-details summary::before {
+  content: '▸';
+  display: inline-block;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease;
+}
+.methodology-details[open] summary::before {
+  transform: rotate(90deg);
+}
+.methodology-content {
+  margin-top: 1.25rem;
+  color: var(--text-secondary);
+  border-top: 1px dashed var(--line);
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.methodology-content p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.methodology-sources {
+  font-size: 0.85rem !important;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* Beachhead CTA */
+.beachhead-cta {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+.beachhead-cta p {
+  font-size: 1.1rem;
+  color: var(--navy);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.beachhead-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px) {
+  .beachhead-tiers {
+    grid-template-columns: 1fr;
   }
 }
