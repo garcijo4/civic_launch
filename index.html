@@ -9,8 +9,13 @@
     content="Civic Launch is a CLU-based Ventura County pilot turning paid student employment into nonprofit capacity. Cohort 1 launches Q3 2026 — 10–25 scoped projects, supervised AI workflows, and reusable handoffs."
   >
 
+  <link rel="canonical" href="https://www.civiclaunch.org/">
+  <link rel="icon" type="image/png" href="./assets/civic-launch-icon.png">
+  <link rel="apple-touch-icon" href="./assets/civic-launch-icon.png">
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.civiclaunch.org/">
   <meta property="og:title" content="Civic Launch — CLU Pilot · Paid Student Talent for Nonprofits">
   <meta property="og:description" content="Real projects. Supervised AI workflows. A CLU-based pilot turning paid student employment into nonprofit capacity through scoped projects and reusable handoff tools.">
   <meta property="og:image" content="./assets/civic-launch-og.png">
@@ -34,6 +39,22 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How are students paid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "During the pilot, students are employed through CLU's existing student employment framework with John Garcia as the faculty manager of record. The target pay range is $18–$22 per hour. Students are university employees, not independent contractors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Civic Launch already launched?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The CLU-only pilot is in development. Launch is contingent on funding, CNL nonprofit host pipeline readiness, student employment workflow confirmation, and project readiness."
+        }
+      },
       {
         "@type": "Question",
         "name": "Is Civic Launch a job board?",
@@ -76,34 +97,10 @@
       },
       {
         "@type": "Question",
-        "name": "How are students paid?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "During the pilot, students are employed through CLU's existing student employment framework with John Garcia as the faculty manager of record. The target pay range is $18–$22 per hour. Students are university employees, not independent contractors."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "What kinds of projects are a fit?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Grant prospect research, communications and social media, donor database cleanup, volunteer onboarding design, basic data analysis, website updates, and other bounded deliverables. Most projects are 15–25 hours. Some analytics or dashboard projects are 25–40 hours."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Civic Launch already launched?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. The CLU-only pilot is in development. Launch is contingent on funding, CNL nonprofit host pipeline readiness, student employment workflow confirmation, and project readiness."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is Civic Launch funded?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Civic Launch is seeking an initial anchor grant within a broader Year 1 funding stack. Philanthropic support helps launch the model. Over time, support shifts toward Federal Work-Study and host co-pay."
         }
       },
       {
@@ -121,12 +118,44 @@
           "@type": "Answer",
           "text": "No. During the pilot, students are employed through CLU's student employment framework. Nonprofit hosts provide project context, midpoint feedback, and final sign-off — but they do not employ or manage students directly."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Civic Launch funded?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Civic Launch is seeking an initial anchor grant within a broader Year 1 funding stack. Philanthropic support helps launch the model. Over time, support shifts toward Federal Work-Study and host co-pay."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Civic Launch a 501(c)(3)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not yet. Year 1 is housed inside CLU; Civic Launch will incorporate as a 501(c)(3) by Q4 2027."
+        }
       }
     ]
   }
   </script>
+
+  <!-- Organization Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Civic Launch",
+    "url": "https://www.civiclaunch.org",
+    "logo": "https://www.civiclaunch.org/assets/civic-launch-icon.png",
+    "founder": { "@type": "Person", "name": "John Garcia" },
+    "areaServed": "Ventura County, California",
+    "parentOrganization": { "@type": "CollegeOrUniversity", "name": "California Lutheran University" },
+    "description": "A CLU-based managed nonprofit talent intermediary connecting paid student workers to scoped nonprofit projects in Ventura County."
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <div class="site-shell">
     <header class="site-header">
@@ -179,14 +208,10 @@
           <h1>Paid student talent<br>for nonprofits.</h1>
           <p class="hero-subhead">Real projects. Reusable AI workflows.</p>
           <p class="hero-support">
-            Civic Launch bridges students and nonprofits.
+            Civic Launch bridges students and nonprofits through scoped, bounded projects — turning paid CLU student employment into real nonprofit capacity.
           </p>
           <p class="hero-support">
-            A Ventura County pilot using existing student employment to build nonprofit capacity.
-          </p>
-          <p class="hero-support">
-            Year 1 will focus on California Lutheran University students only, using CLU's existing student
-            employment framework, with nonprofit partners recruited through the CLU Center for Nonprofit Leadership.
+            Nonprofit partners are recruited through the CLU Center for Nonprofit Leadership. Cohort 1 launches Q3 2026.
           </p>
 
           <div class="hero-actions">
@@ -204,6 +229,7 @@
             <p class="cta-note">Cohort 1 is limited to CLU students employed through the CLU student employment framework.</p>
             <p class="cta-note">Nonprofit hosts provide project context and feedback; they do not employ or manage students directly.</p>
           </div>
+          <p class="cta-fallback">Email not opening? <a href="https://forms.cloud.microsoft/r/WkhSGKYU7G" target="_blank" rel="noopener">Fill out a quick form instead.</a></p>
           <div class="hero-actions-secondary">
             <a class="button button-ghost" href="#pitch-video" id="cta-hero-video">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -271,7 +297,7 @@
             <p>
               A first-generation business major working two jobs while taking 15 units. The only local internships are unpaid — every hour she spends on one is an hour she can't afford to give up.
             </p>
-            <p class="story-stat" class="story-stat"><strong>67%</strong> Paid Experience Gap (NSCI 2024)</p>
+            <p class="story-stat"><strong>67%</strong> Paid Experience Gap (NSCI 2024)</p>
           </article>
 
           <article class="story-card" data-reveal>
@@ -282,23 +308,13 @@
             <p>
               A small Ventura County nonprofit with a grant deadline, a half-built volunteer workflow, and no budget for staff.
             </p>
-            <p class="story-stat" class="story-stat"><strong>75%</strong> Vacancy Rate (National Council of Nonprofits 2023)<br><strong>1 in 2</strong> ≤ 3 months of cash (Nonprofit Finance Fund 2025)</p>
+            <p class="story-stat"><strong>75%</strong> Vacancy Rate (National Council of Nonprofits 2023)<br><strong>1 in 2</strong> ≤ 3 months of cash (Nonprofit Finance Fund 2025)</p>
           </article>
         </div>
 
         <p class="story-synthesis" data-reveal>
           Civic Launch exists in the space between these two unmet needs.
         </p>
-        
-        <div class="social-proof-quote" data-reveal>
-          <blockquote>
-            "There is a massive, unmet need for structured, bounded capacity-building help in the Ventura County nonprofit sector. This pilot directly answers that call."
-          </blockquote>
-          <div class="quote-author">
-            <strong>Dena Jenson</strong>
-            <span>Director, CLU Center for Nonprofit Leadership</span>
-          </div>
-        </div>
       </section>
 
       <!-- ============================================================
@@ -312,17 +328,20 @@
 
         <div class="forces-grid" data-reveal >
           <article class="force-card" >
-            <h3 class="force-stat" >67%</h3>
+            <p class="force-stat" >67%</p>
             <p class="force-label" >Paid Experience Gap</p>
+            <p class="force-source">NSCI 2024</p>
           </article>
           <article class="force-card" >
-            <h3 class="force-stat" >75%</h3>
+            <p class="force-stat" >75%</p>
             <p class="force-label" >Nonprofit Capacity Crisis</p>
+            <p class="force-source">National Council of Nonprofits 2023</p>
           </article>
           <article class="force-card" >
-            <h3 class="force-stat" >76%</h3>
-            <p class="force-label" >AI Readiness Gap</p>
+            <p class="force-stat" >76%</p>
+            <p class="force-label" >Nonprofit AI Adoption Lag</p>
             <p class="force-desc" >No formal AI strategy</p>
+            <p class="force-source">Stanford Social Innovation Review 2024</p>
           </article>
         </div>
         <p class="forces-closing" data-reveal >
@@ -699,6 +718,8 @@
                 loading="lazy"
               >
                 <source src="./assets/Civic_Launch_Pitch_with_captions.mp4" type="video/mp4">
+                <!-- Captions are burned into the video file. Add captions.vtt to assets/ to also serve them as a WebVTT track for screen readers and Google video indexing. -->
+                <track kind="captions" srclang="en" label="English" src="./assets/captions.vtt">
                 Your browser does not support the video tag.
               </video>
               <button class="video-play-overlay" id="video-play-btn" aria-label="Play elevator pitch video">
@@ -933,12 +954,12 @@
 
         <div class="value-metrics" data-reveal >
           <div class="metric">
-            <h3 >$22.5K</h3>
-            <p >Paid-vs-unpaid salary gap (NACE 2023)</p>
+            <p class="metric-stat">$22.5K</p>
+            <p>Paid-vs-unpaid salary gap (NACE 2023)</p>
           </div>
           <div class="metric">
-            <h3 >≥85%</h3>
-            <p >Pilot completion-rate target</p>
+            <p class="metric-stat">≥85%</p>
+            <p>Pilot completion-rate target</p>
           </div>
         </div>
 
@@ -986,7 +1007,7 @@
           </article>
         </div>
         <div class="steady-state-headline" data-reveal >
-          <h3 ><strong>$661</strong> future fully-loaded cost target at steady state.</h3>
+          <p class="callout-stat"><strong>$661</strong> future fully-loaded cost target at steady state.</p>
         </div>
       </section>
 
@@ -1037,7 +1058,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr >
+              <tr class="cl-row">
                 <td ><strong>Civic Launch</strong></td>
                 <td ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></td>
                 <td ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></td>
@@ -1282,84 +1303,92 @@
           <h2>Answers for nonprofits, students, and partners.</h2>
         </div>
 
+        <div class="faq-tabs" role="tablist" aria-label="Filter FAQs by audience">
+          <button class="faq-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="faq-tab" data-filter="nonprofits" role="tab" aria-selected="false">For Nonprofits</button>
+          <button class="faq-tab" data-filter="students" role="tab" aria-selected="false">For Students</button>
+          <button class="faq-tab" data-filter="funders" role="tab" aria-selected="false">For Funders</button>
+        </div>
+
         <div class="faq-list">
-          <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">Is Civic Launch a job board?</button>
-            <div class="faq-answer">
-              <p>No. Civic Launch is a managed nonprofit talent intermediary. The team scopes projects, recruits students, curates matches, handles onboarding, and supports quality throughout. It is not a self-serve job board or volunteer matching platform.</p>
-            </div>
-          </article>
-
-          <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">How much nonprofit supervision time is required?</button>
-            <div class="faq-answer">
-              <p>About 2–3 hours total across three touchpoints: a 15-minute scoping call, a 10-minute kickoff, and a 30-minute final review. Civic Launch handles everything in between.</p>
-            </div>
-          </article>
-
-          <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">Do hosts have to use AI?</button>
-            <div class="faq-answer">
-              <p>No. AI is optional. During scoping, hosts choose whether AI-assisted work is allowed, restricted, or fully opt-out. Every decision is documented before the project begins.</p>
-            </div>
-          </article>
-
-          <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">What exactly does a nonprofit receive at the end of a project?</button>
-            <div class="faq-answer">
-              <p>A finished deliverable, a workflow handoff note documenting what was done and what worked, and reusable templates or process documentation where applicable.</p>
-            </div>
-          </article>
-
-          <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">How is this different from volunteering, consulting, or internship matching?</button>
-            <div class="faq-answer">
-              <p>Students are paid through CLU's student employment framework during the pilot. Civic Launch manages scoping, matching, onboarding, and quality support. Work is scoped, bounded, and documented with reusable handoffs — a managed model, not a posting board.</p>
-            </div>
-          </article>
-
-          <article class="faq-item" data-reveal>
+          <article class="faq-item" data-reveal data-audience="students">
             <button class="faq-question" type="button" aria-expanded="false">How are students paid?</button>
             <div class="faq-answer">
               <p>During the pilot, students are employed through CLU's existing student employment framework with John Garcia as the faculty manager of record. The target pay range is $18–$22 per hour. Students are university employees, not independent contractors.</p>
             </div>
           </article>
 
-          <article class="faq-item" data-reveal>
+          <article class="faq-item" data-reveal data-audience="all">
+            <button class="faq-question" type="button" aria-expanded="false">Is Civic Launch already launched?</button>
+            <div class="faq-answer">
+              <p>No. The CLU-only pilot is in development. Launch is contingent on funding, CNL nonprofit host pipeline readiness, student employment workflow confirmation, and project readiness. Cohort 1 is targeted for Q3 2026.</p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-reveal data-audience="all">
+            <button class="faq-question" type="button" aria-expanded="false">Is Civic Launch a job board?</button>
+            <div class="faq-answer">
+              <p>No. Civic Launch is a managed nonprofit talent intermediary. The team scopes projects, recruits students, curates matches, handles onboarding, and supports quality throughout. It is not a self-serve job board or volunteer matching platform.</p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-reveal data-audience="nonprofits">
+            <button class="faq-question" type="button" aria-expanded="false">How much nonprofit supervision time is required?</button>
+            <div class="faq-answer">
+              <p>About 2–3 hours total across three touchpoints: a 15-minute scoping call, a 10-minute kickoff, and a 30-minute final review. Civic Launch handles everything in between.</p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-reveal data-audience="nonprofits">
+            <button class="faq-question" type="button" aria-expanded="false">Do hosts have to use AI?</button>
+            <div class="faq-answer">
+              <p>No. AI is optional. During scoping, hosts choose whether AI-assisted work is allowed, restricted, or fully opt-out. Every decision is documented before the project begins.</p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-reveal data-audience="nonprofits">
+            <button class="faq-question" type="button" aria-expanded="false">What exactly does a nonprofit receive at the end of a project?</button>
+            <div class="faq-answer">
+              <p>A finished deliverable, a workflow handoff note documenting what was done and what worked, and reusable templates or process documentation where applicable.</p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-reveal data-audience="all">
+            <button class="faq-question" type="button" aria-expanded="false">How is this different from volunteering, consulting, or internship matching?</button>
+            <div class="faq-answer">
+              <p>Students are paid through CLU's student employment framework during the pilot. Civic Launch manages scoping, matching, onboarding, and quality support. Work is scoped, bounded, and documented with reusable handoffs — a managed model, not a posting board.</p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-reveal data-audience="nonprofits">
             <button class="faq-question" type="button" aria-expanded="false">What kinds of projects are a fit?</button>
             <div class="faq-answer">
               <p>Grant prospect research, communications and social media, donor database cleanup, volunteer onboarding design, basic data analysis, website updates, and other bounded deliverables. Most projects are 15–25 hours. Some analytics or dashboard projects are 25–40 hours.</p>
             </div>
           </article>
 
-          <article class="faq-item" data-reveal>
-            <button class="faq-question" type="button" aria-expanded="false">Is Civic Launch already launched?</button>
-            <div class="faq-answer">
-              <p>No. The CLU-only pilot is in development. Launch is contingent on funding, CNL nonprofit host pipeline readiness, student employment workflow confirmation, and project readiness.</p>
-            </div>
-          </article>
-
-          <article class="faq-item" data-reveal>
+          <article class="faq-item" data-reveal data-audience="funders">
             <button class="faq-question" type="button" aria-expanded="false">What role does the CLU Center for Nonprofit Leadership play?</button>
             <div class="faq-answer">
               <p>CNL, led by Dena Jenson, serves as the primary nonprofit-facing recruitment and relationship channel for the pilot. CNL identifies Ventura County nonprofit organizations with bounded project needs and connects them to Civic Launch for intake and scoping.</p>
             </div>
           </article>
 
-          <article class="faq-item" data-reveal>
+          <article class="faq-item" data-reveal data-audience="nonprofits">
             <button class="faq-question" type="button" aria-expanded="false">Do nonprofits employ the students?</button>
             <div class="faq-answer">
               <p>No. During the pilot, students are employed through CLU's student employment framework. Nonprofit hosts provide project context, midpoint feedback, and final sign-off — but they do not employ or manage students directly.</p>
             </div>
           </article>
 
-          <article class="faq-item" data-reveal>
+          <article class="faq-item" data-reveal data-audience="funders">
             <button class="faq-question" type="button" aria-expanded="false">How is Civic Launch funded?</button>
             <div class="faq-answer">
               <p>Civic Launch is seeking an initial anchor grant within a broader Year 1 funding stack. Philanthropic support helps launch the model. Over time, support shifts toward Federal Work-Study and host co-pay sustainability.</p>
             </div>
           </article>
-          <article class="faq-item" data-reveal>
+
+          <article class="faq-item" data-reveal data-audience="funders">
             <button class="faq-question" type="button" aria-expanded="false">Is Civic Launch a 501(c)(3)?</button>
             <div class="faq-answer">
               <p>Not yet. Year 1 is housed inside CLU; Civic Launch will incorporate as a 501(c)(3) by Q4 2027.</p>
@@ -1414,28 +1443,64 @@
                 Funders / Partners: Start a Conversation
               </a>
             </div>
+            <p class="cta-fallback">Email not opening? <a href="https://forms.cloud.microsoft/r/WkhSGKYU7G" target="_blank" rel="noopener">Fill out a quick form instead.</a></p>
           </div>
         </div>
       </section>
 
     </main>
 
+    <!-- Sticky bottom CTA bar (shown after hero scrolls out of view) -->
+    <div class="sticky-cta-bar" id="sticky-cta" aria-hidden="true" aria-live="polite">
+      <p class="sticky-cta-label">Ready to join Cohort 1?</p>
+      <a class="button" href="https://forms.cloud.microsoft/r/WkhSGKYU7G" target="_blank" rel="noopener" tabindex="-1">
+        Submit a Project Need
+      </a>
+      <button class="sticky-cta-close" aria-label="Dismiss bar" tabindex="-1">&#x2715;</button>
+    </div>
+
     <!-- ============================================================
          Section 14: Footer (utility area)
          ============================================================ -->
-    <footer class="site-footer">
-      <div class="footer-brand">
-        <img src="./assets/civic-launch-icon.png" alt="" class="footer-mark">
-        <div>
-          <strong>Civic Launch</strong>
-          <p>Managed nonprofit talent intermediary</p>
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="./assets/civic-launch-icon.png" alt="" class="footer-mark">
+            <div>
+              <strong>Civic Launch</strong>
+              <p>Managed nonprofit talent intermediary</p>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:var(--muted); margin-top:1rem;">Year 1 is housed inside California Lutheran University. Launch contingent on funding, CNL nonprofit host pipeline, and student employment workflow confirmation.</p>
+          <a href="mailto:jgarcia@callutheran.edu" style="font-size:0.875rem; color:var(--teal);">jgarcia@callutheran.edu</a>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-col-title">Navigate</p>
+          <ul class="footer-nav-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#colleges">Colleges</a></li>
+            <li><a href="#faqs">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-col-title">Legal &amp; Accessibility</p>
+          <ul class="footer-legal-links">
+            <li><a href="#faqs">Privacy Policy <span style="font-size:0.75rem; color:var(--muted);">(coming soon)</span></a></li>
+            <li><a href="#faqs">Terms of Use <span style="font-size:0.75rem; color:var(--muted);">(coming soon)</span></a></li>
+            <li><a href="#faqs">Accessibility Statement <span style="font-size:0.75rem; color:var(--muted);">(coming soon)</span></a></li>
+          </ul>
         </div>
       </div>
 
-      <div class="footer-meta">
-        <p>Ventura County pilot in development.</p>
-        <p class="footer-gate-note">CLU-only pilot in development. Launch contingent on funding, CNL nonprofit host pipeline, student employment workflow confirmation, and project readiness.</p>
-        <a href="mailto:jgarcia@callutheran.edu">jgarcia@callutheran.edu</a>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Civic Launch &mdash; Hosted at California Lutheran University, Thousand Oaks, CA.</p>
+        <p>CLU-only pilot &middot; Not yet a 501(c)(3)</p>
       </div>
     </footer>
   </div>
@@ -1444,6 +1509,7 @@
   
   <!-- ElevenLabs Conversational AI Widget -->
   <elevenlabs-convai agent-id="agent_6301kpq01ktseqnbgp08y64afwwn"></elevenlabs-convai>
-  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed@0.11.6" async type="text/javascript"></script>
+  <p class="widget-disclosure">This conversation is processed by ElevenLabs and may be retained for quality and training. Do not share confidential information. <a href="https://elevenlabs.io/privacy" target="_blank" rel="noopener">Privacy policy</a>.</p>
 </body>
 </html>

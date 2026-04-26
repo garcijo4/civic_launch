@@ -105,6 +105,74 @@ if ("IntersectionObserver" in window) {
 }
 
 /* ============================================================
+   Sticky Bottom CTA Bar
+   ============================================================ */
+const stickyCta = document.getElementById("sticky-cta");
+const stickyClose = stickyCta ? stickyCta.querySelector(".sticky-cta-close") : null;
+const heroSection = document.getElementById("top");
+
+if (stickyCta && heroSection && "IntersectionObserver" in window) {
+  if (!sessionStorage.getItem("ctaBarDismissed")) {
+    const heroObserver = new IntersectionObserver(
+      (entries) => {
+        const heroVisible = entries[0].isIntersecting;
+        stickyCta.classList.toggle("visible", !heroVisible);
+        stickyCta.setAttribute("aria-hidden", String(heroVisible));
+        stickyCta.querySelectorAll("a, button").forEach((el) => {
+          el.setAttribute("tabindex", heroVisible ? "-1" : "0");
+        });
+        document.body.classList.toggle("sticky-cta-active", !heroVisible);
+      },
+      { threshold: 0.1 }
+    );
+    heroObserver.observe(heroSection);
+  }
+
+  if (stickyClose) {
+    stickyClose.addEventListener("click", () => {
+      stickyCta.classList.remove("visible");
+      stickyCta.setAttribute("aria-hidden", "true");
+      sessionStorage.setItem("ctaBarDismissed", "1");
+      document.body.classList.remove("sticky-cta-active");
+    });
+  }
+}
+
+/* ============================================================
+   FAQ Audience Tab Filter
+   ============================================================ */
+const faqTabList = document.querySelector(".faq-tabs");
+const faqItems = document.querySelectorAll(".faq-item[data-audience]");
+
+if (faqTabList && faqItems.length) {
+  faqTabList.addEventListener("click", (e) => {
+    const tab = e.target.closest(".faq-tab");
+    if (!tab) return;
+
+    const filter = tab.dataset.filter;
+
+    faqTabList.querySelectorAll(".faq-tab").forEach((t) => {
+      t.classList.remove("active");
+      t.setAttribute("aria-selected", "false");
+    });
+    tab.classList.add("active");
+    tab.setAttribute("aria-selected", "true");
+
+    faqItems.forEach((item) => {
+      const audience = item.dataset.audience;
+      const show = filter === "all" || audience === filter || audience === "all";
+      item.hidden = !show;
+
+      if (!show && item.querySelector(".faq-question").getAttribute("aria-expanded") === "true") {
+        item.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+        const answer = item.querySelector(".faq-answer");
+        if (answer) answer.style.maxHeight = null;
+      }
+    });
+  });
+}
+
+/* ============================================================
    Video Play Overlay + Tracking
    ============================================================ */
 const pitchVideo = document.getElementById("pitch-video-player");

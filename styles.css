@@ -2502,6 +2502,12 @@ section[id] {
   color: var(--muted);
   margin-top: 0.25rem;
 }
+.force-source {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
 .forces-closing {
   margin-top: 2rem;
   text-align: center;
@@ -2518,7 +2524,8 @@ section[id] {
   margin-top: 2rem;
   text-align: center;
 }
-.value-metrics .metric h3 {
+.value-metrics .metric h3,
+.value-metrics .metric .metric-stat {
   font-size: 2rem;
   color: var(--teal);
   margin: 0;
@@ -2573,7 +2580,8 @@ section[id] {
   border-radius: var(--radius-md);
   border: 1px solid var(--teal);
 }
-.steady-state-headline h3 {
+.steady-state-headline h3,
+.steady-state-headline .callout-stat {
   margin: 0;
   color: var(--teal);
 }
@@ -2931,47 +2939,6 @@ section[id] {
   z-index: 1;
 }
 
-/* 3. Social Proof Quote */
-.social-proof-quote {
-  margin-top: 3rem;
-  padding: 2.5rem;
-  background: var(--navy);
-  border-radius: var(--radius-lg);
-  position: relative;
-}
-.social-proof-quote::before {
-  content: '"';
-  position: absolute;
-  top: -10px;
-  left: 20px;
-  font-size: 6rem;
-  color: rgba(255, 255, 255, 0.1);
-  font-family: Georgia, serif;
-  line-height: 1;
-}
-.social-proof-quote blockquote {
-  font-size: 1.25rem;
-  color: #fff;
-  line-height: 1.6;
-  font-style: italic;
-  margin: 0 0 1.5rem 0;
-  position: relative;
-  z-index: 1;
-}
-.quote-author {
-  display: flex;
-  flex-direction: column;
-}
-.quote-author strong {
-  color: var(--gold);
-  font-size: 1.05rem;
-}
-.quote-author span {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9rem;
-  margin-top: 0.25rem;
-}
-
 /* 4. Before & After Transformation */
 .transformation-block {
   margin: 1.25rem 0;
@@ -3253,5 +3220,186 @@ section[id] {
 @media screen and (max-width: 900px) {
   .beachhead-tiers {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   Competitive table: Civic Launch row emphasis
+   ============================================================ */
+.competitor-table tbody tr.cl-row td {
+  background: var(--bg-accent);
+  font-weight: 600;
+}
+.competitor-table tbody tr.cl-row td:first-child {
+  border-left: 3px solid var(--gold);
+}
+
+/* ============================================================
+   FAQ tabs
+   ============================================================ */
+.faq-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.faq-tab {
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.faq-tab:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+.faq-tab.active,
+.faq-tab[aria-selected="true"] {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+}
+.faq-item[hidden] {
+  display: none;
+}
+
+/* ============================================================
+   Sticky bottom CTA bar
+   ============================================================ */
+.sticky-cta-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: var(--navy);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  flex-wrap: wrap;
+}
+.sticky-cta-bar.visible {
+  transform: translateY(0);
+}
+.sticky-cta-label {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+}
+.sticky-cta-close {
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.7);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  margin-left: 0.5rem;
+}
+.sticky-cta-close:hover { color: #fff; }
+
+/* Lift ElevenLabs widget above sticky bar when bar is visible */
+body.sticky-cta-active elevenlabs-convai {
+  --bottom: 72px;
+}
+
+/* ============================================================
+   Helper: CTA fallback note and widget disclosure
+   ============================================================ */
+.cta-fallback {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+  text-align: center;
+}
+.cta-fallback a {
+  color: var(--teal);
+  text-decoration: underline;
+}
+.widget-disclosure {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-align: center;
+  max-width: 480px;
+  margin: 0.5rem auto 0;
+  line-height: 1.5;
+}
+.widget-disclosure a { color: var(--teal); }
+
+/* ============================================================
+   Footer 3-column layout
+   ============================================================ */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 2.5rem var(--page-pad);
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.footer-col-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+.footer-nav-links,
+.footer-legal-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.footer-nav-links a,
+.footer-legal-links a {
+  font-size: 0.875rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.footer-nav-links a:hover,
+.footer-legal-links a:hover {
+  color: var(--teal);
+}
+.footer-bottom {
+  border-top: 1px solid var(--line);
+  padding: 1rem var(--page-pad);
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .sticky-cta-bar {
+    padding: 0.75rem 1rem;
+  }
+  .sticky-cta-label {
+    display: none;
   }
 }
