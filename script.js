@@ -110,22 +110,46 @@ if ("IntersectionObserver" in window) {
 const stickyCta = document.getElementById("sticky-cta");
 const stickyClose = stickyCta ? stickyCta.querySelector(".sticky-cta-close") : null;
 const heroSection = document.getElementById("top");
+const finalCtaSection = document.getElementById("contact");
 
 if (stickyCta && heroSection && "IntersectionObserver" in window) {
   if (!sessionStorage.getItem("ctaBarDismissed")) {
-    const heroObserver = new IntersectionObserver(
+    const stickyVisibility = {
+      heroVisible: true,
+      finalCtaVisible: false
+    };
+
+    const updateStickyCta = () => {
+      const shouldHide = stickyVisibility.heroVisible || stickyVisibility.finalCtaVisible;
+      stickyCta.classList.toggle("visible", !shouldHide);
+      stickyCta.setAttribute("aria-hidden", String(shouldHide));
+      stickyCta.querySelectorAll("a, button").forEach((el) => {
+        el.setAttribute("tabindex", shouldHide ? "-1" : "0");
+      });
+      document.body.classList.toggle("sticky-cta-active", !shouldHide);
+    };
+
+    const stickyObserver = new IntersectionObserver(
       (entries) => {
-        const heroVisible = entries[0].isIntersecting;
-        stickyCta.classList.toggle("visible", !heroVisible);
-        stickyCta.setAttribute("aria-hidden", String(heroVisible));
-        stickyCta.querySelectorAll("a, button").forEach((el) => {
-          el.setAttribute("tabindex", heroVisible ? "-1" : "0");
+        entries.forEach((entry) => {
+          if (entry.target === heroSection) {
+            stickyVisibility.heroVisible = entry.isIntersecting;
+          }
+
+          if (entry.target === finalCtaSection) {
+            stickyVisibility.finalCtaVisible = entry.isIntersecting;
+          }
         });
-        document.body.classList.toggle("sticky-cta-active", !heroVisible);
+
+        updateStickyCta();
       },
       { threshold: 0.1 }
     );
-    heroObserver.observe(heroSection);
+
+    stickyObserver.observe(heroSection);
+    if (finalCtaSection) {
+      stickyObserver.observe(finalCtaSection);
+    }
   }
 
   if (stickyClose) {
