@@ -2677,6 +2677,33 @@ section[id] {
   color: var(--muted);
   font-size: 1.1rem;
 }
+.competitor-table-note {
+  max-width: 980px;
+  margin: 0.9rem auto 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+.competitor-table-note p + p {
+  margin-top: 0.35rem;
+}
+.competitor-table-note strong {
+  color: var(--navy);
+}
+.competitor-table-note .matrix-yes,
+.competitor-table-note .matrix-partial,
+.competitor-table-note .matrix-no {
+  font-weight: 800;
+}
+.competitor-table-note .matrix-yes {
+  color: var(--teal);
+}
+.competitor-table-note .matrix-partial {
+  color: var(--gold);
+}
+.competitor-table-note .matrix-no {
+  color: var(--muted);
+}
 
 /* Traction & Evidence */
 .traction-list {
